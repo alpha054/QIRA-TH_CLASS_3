@@ -1,635 +1,203 @@
 <!DOCTYPE html>
 <html lang="ml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>ഹിമായത്തുൽ ഇസ്ലാം മദ്രസ - മാസ പരീക്ഷ ഫലം</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Result</title>
 
-        body {
-            background: linear-gradient(135deg, #e9f0ec 0%, #dce6e0 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Segoe UI', 'Noto Sans Malayalam', 'Roboto', system-ui, sans-serif;
-            padding: 20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-        .main-wrapper {
-            max-width: 700px;
-            width: 100%;
-        }
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#0a2e3f,#06202c);
+  padding:20px;
+}
 
-        .result-card {
-            background: #ffffff;
-            border-radius: 56px 32px 56px 32px;
-            box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
-        }
+.container{
+  max-width:1000px;
+  margin:auto;
+  background:white;
+  border-radius:30px;
+  padding:30px;
+  box-shadow:0 40px 70px rgba(0,0,0,0.3);
+}
 
-        .madrasa-header {
-            background: #0a3b2e;
-            background-image: radial-gradient(circle at 20% 30%, rgba(255,220,150,0.1) 2%, transparent 2.5%);
-            background-size: 30px 30px;
-            padding: 30px 24px 22px 24px;
-            text-align: center;
-            color: white;
-        }
+.header{text-align:center;margin-bottom:20px;}
+.header h1{
+  background:linear-gradient(45deg,#f4a261,#ffd700);
+  -webkit-background-clip:text;
+  color:transparent;
+}
 
-        .madrasa-name {
-            font-size: 1.9rem;
-            font-weight: 800;
-            line-height: 1.3;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
+.top{
+  background:#fff3cd;
+  padding:15px;
+  border-radius:18px;
+  text-align:center;
+  margin-bottom:20px;
+  font-weight:bold;
+}
 
-        .madrasa-name small {
-            font-size: 0.8rem;
-            display: block;
-            font-weight: 400;
-            opacity: 0.85;
-            margin-top: 5px;
-        }
+table{width:100%;border-collapse:collapse;}
+th{background:#2a6f8f;color:white;padding:12px;}
+td{padding:10px;text-align:center;border-bottom:1px solid #eee;}
 
-        .exam-badge {
-            background: #f5b642;
-            display: inline-block;
-            margin-top: 16px;
-            padding: 7px 22px;
-            border-radius: 60px;
-            font-weight: bold;
-            font-size: 0.95rem;
-            color: #1e2f28;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-        }
+.gold{background:#fff8dc;}
+.silver{background:#f1f3f5;}
+.bronze{background:#ffe5b4;}
 
-        .topper-highlight {
-            background: linear-gradient(135deg, #fff3e0, #ffe6c7);
-            border-radius: 40px;
-            margin: 20px 24px 0 24px;
-            padding: 18px 18px;
-            text-align: center;
-            border: 1px solid #ffd966;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-        .topper-label {
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            background: #f5b642;
-            display: inline-block;
-            padding: 4px 16px;
-            border-radius: 50px;
-            font-weight: bold;
-            color: #2c4b3e;
-            margin-bottom: 12px;
-        }
-        .topper-name {
-            font-size: 1.7rem;
-            font-weight: 800;
-            color: #c25d00;
-            background: #fff0dd;
-            display: inline-block;
-            padding: 6px 28px;
-            border-radius: 60px;
-            margin: 6px 0;
-            letter-spacing: 1px;
-        }
-        .topper-rank-badge {
-            font-size: 1rem;
-            font-weight: bold;
-            background: #0a3b2e;
-            color: #ffdd99;
-            display: inline-block;
-            padding: 6px 18px;
-            border-radius: 40px;
-            margin-top: 6px;
-        }
-        .topper-marks {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #1f6e58;
-            margin-top: 8px;
-        }
+button{
+  width:100%;
+  margin-top:20px;
+  padding:15px;
+  background:#e67e22;
+  color:white;
+  border:none;
+  border-radius:50px;
+  font-size:18px;
+  cursor:pointer;
+}
 
-        .content {
-            padding: 28px 28px 32px 28px;
-        }
-
-        .select-area {
-            margin-bottom: 26px;
-        }
-
-        label {
-            font-weight: 700;
-            color: #1a4238;
-            display: block;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-        }
-
-        select {
-            width: 100%;
-            padding: 14px 18px;
-            font-size: 1rem;
-            font-family: inherit;
-            background: #fbfdfc;
-            border: 1.5px solid #cce0d8;
-            border-radius: 44px;
-            outline: none;
-            cursor: pointer;
-            font-weight: 500;
-            color: #1e2e26;
-        }
-
-        select:focus {
-            border-color: #0a3b2e;
-            box-shadow: 0 0 0 3px rgba(10,59,46,0.2);
-        }
-
-        .captcha-area {
-            background: #f1f6f3;
-            padding: 22px 20px;
-            border-radius: 36px;
-            margin: 18px 0 25px 0;
-        }
-
-        .captcha-preview {
-            background: #1f3b33;
-            color: #f3f9e8;
-            font-size: 2rem;
-            font-weight: 800;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 10px;
-            text-align: center;
-            padding: 12px 10px;
-            border-radius: 60px;
-            margin-bottom: 20px;
-            word-break: break-all;
-            user-select: all;
-            cursor: pointer;
-        }
-
-        .captcha-input {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .captcha-input input {
-            flex: 2;
-            padding: 12px 18px;
-            font-size: 1rem;
-            border: 1.5px solid #c2dbd0;
-            border-radius: 60px;
-            font-family: monospace;
-            background: white;
-            outline: none;
-            transition: all 0.2s;
-        }
-
-        .captcha-input input:focus {
-            border-color: #0a3b2e;
-            box-shadow: 0 0 0 3px rgba(10,59,46,0.1);
-        }
-
-        .refresh-captcha {
-            background: #e2eae5;
-            border: none;
-            padding: 12px 22px;
-            border-radius: 60px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
-            color: #1f4238;
-            font-size: 0.9rem;
-        }
-
-        .refresh-captcha:hover {
-            background: #cddbd3;
-            transform: scale(0.97);
-        }
-
-        .view-btn {
-            width: 100%;
-            background: #0a3b2e;
-            color: white;
-            border: none;
-            padding: 15px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 60px;
-            cursor: pointer;
-            transition: 0.2s;
-            margin-top: 6px;
-            font-family: inherit;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-        }
-
-        .view-btn:hover {
-            background: #145e49;
-            transform: scale(0.98);
-        }
-
-        .result-display {
-            margin-top: 32px;
-            background: #fffef7;
-            border-radius: 32px;
-            padding: 22px 20px;
-            text-align: center;
-            border: 1px solid #efe2cc;
-            transition: 0.2s;
-        }
-
-        .result-name {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: #1f463b;
-            border-bottom: 2px dashed #f5b642;
-            display: inline-block;
-            padding-bottom: 6px;
-            margin-bottom: 16px;
-        }
-
-        .marks-badge {
-            font-size: 3.2rem;
-            font-weight: 800;
-            color: #2a604f;
-            background: #eaf4ef;
-            display: inline-block;
-            padding: 6px 28px;
-            border-radius: 80px;
-            margin: 12px 0;
-            letter-spacing: 2px;
-        }
-
-        .rank-badge {
-            background: #f5b64220;
-            border: 2px solid #f5b642;
-            padding: 8px 20px;
-            border-radius: 60px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin: 8px auto;
-            display: inline-block;
-            color: #a45200;
-        }
-
-        .teacher-remark {
-            background: #faf2e4;
-            padding: 14px 18px;
-            border-radius: 28px;
-            margin-top: 16px;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #4a3b24;
-            text-align: center;
-            border-left: 5px solid #f5b642;
-        }
-
-        .error-msg {
-            color: #b3413a;
-            background: #ffeae9;
-            padding: 14px;
-            border-radius: 60px;
-            font-weight: 500;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        footer {
-            font-size: 0.7rem;
-            text-align: center;
-            padding: 18px 20px 18px;
-            color: #7c9287;
-            border-top: 1px solid #e0e9e2;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 520px) {
-            .content {
-                padding: 24px 18px;
-            }
-            .madrasa-name {
-                font-size: 1.5rem;
-            }
-            .marks-badge {
-                font-size: 2.3rem;
-            }
-            .topper-name {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+.footer{text-align:center;margin-top:15px;color:#666;}
+</style>
 </head>
+
 <body>
-<div class="main-wrapper">
-    <div class="result-card">
-        <div class="madrasa-header">
-            <div class="madrasa-name">
-                ഹിമായത്തുൽ ഇസ്ലാം മദ്രസ
-            </div>
-            <div class="exam-badge">
-                📖 അഞ്ചാം ക്ലാസ് · മാസ പരീക്ഷ 📝
-            </div>
-        </div>
 
-        <div id="topperHighlight" class="topper-highlight"></div>
+<div class="container" id="report">
 
-        <div class="content">
-            <div class="select-area">
-                <label>👩‍🎓 വിദ്യാർത്ഥിയെ തിരഞ്ഞെടുക്കുക :</label>
-                <select id="studentSelect">
-                    <option value="" disabled selected>-- പേര് സെലക്ട് ചെയ്യുക --</option>
-                    <option value="മുഹമ്മദ് നഹിയാൻ">മുഹമ്മദ് നഹിയാൻ</option>
-                    <option value="മുഹമ്മദ് സയാൻ">മുഹമ്മദ് സയാൻ</option>
-                    <option value="ഹൈറ ഫാത്തിമ">ഹൈറ ഫാത്തിമ</option>
-                    <option value="ഹാദി സിനാൻ">ഹാദി സിനാൻ</option>
-                    <option value="ഹന്ന ഫാത്തിമ">ഹന്ന ഫാത്തിമ</option>
-                    <option value="ലിയ മെഹറിൻ">ലിയ മെഹറിൻ</option>
-                    <option value="റസിൻ">റസിൻ</option>
-                    <option value="ഫാത്തിമ ഹയ">ഫാത്തിമ ഹയ</option>
-                    <option value="ആയിഷ മെഹറിൻ">ആയിഷ മെഹറിൻ</option>
-                </select>
-            </div>
+  <div class="header">
+    <h1>🕌 ഹിമായത്തുൽ ഇസ്ലാം മദ്രസ</h1>
+    <p>ഇസ്ലാമിക് ക്വിസ് ഫൈനൽ റിസൾട്ട്</p>
+  </div>
 
-            <div class="captcha-area">
-                <div class="captcha-preview" id="captchaText">XXXXX</div>
-                <div class="captcha-input">
-                    <input type="text" id="captchaInput" placeholder="മുകളിലെ കോഡ് ഇവിടെ നൽകുക" autocomplete="off">
-                    <button type="button" class="refresh-captcha" id="refreshCaptchaBtn">⟳ പുതിയ കോഡ്</button>
-                </div>
-                <div style="font-size: 0.7rem; color: #6b8b7a; margin-top: 10px; text-align: center;">
-                    💡 കോഡ് ശ്രദ്ധിച്ച് ടൈപ്പ് ചെയ്യുക | കോഡിൽ ക്ലിക്ക് ചെയ്താൽ പുതിയത് വരും
-                </div>
-            </div>
+  <div class="top" id="topStudent">Loading...</div>
 
-            <button class="view-btn" id="showResultBtn">🔍 റിസൾട്ട് കാണുക</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Student</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
 
-            <div id="resultContainer" class="result-display hidden"></div>
-            
-            <footer>
-                🔒 സ്വകാര്യത ഉറപ്പാക്കാൻ ക്യാപ്ച്ച നിർബന്ധമാണ്.<br>
-                📌 ഹിമായത്തുൽ ഇസ്ലാം മദ്രസ - അഞ്ചാം ക്ലാസ് മാസ പരീക്ഷാ ഫലം
-            </footer>
-        </div>
-    </div>
+  <button onclick="downloadPDF()">⬇ Download PDF</button>
+
+  <div class="footer">
+    അധ്യാപകൻ: മുഹമ്മദ് അബ്ദുൽ ഫത്താഹ് ദാരിമി
+  </div>
+
 </div>
 
-<script>
-    // ========== വിദ്യാർത്ഥി വിവരങ്ങൾ ==========
-    const studentMarks = {
-        "മുഹമ്മദ് നഹിയാൻ": 66,
-        "മുഹമ്മദ് സയാൻ": 45,
-        "ഹൈറ ഫാത്തിമ": 74,
-        "ഹാദി സിനാൻ": 16,
-        "ഹന്ന ഫാത്തിമ": 48,
-        "ലിയ മെഹറിൻ": 94,
-        "റസിൻ": 44,
-        "ഫാത്തിമ ഹയ": 58,
-        "ആയിഷ മെഹറിൻ": 59
-    };
+<!-- FIREBASE SDK -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
 
-    // ========== റാങ്ക് കണക്കാക്കൽ ==========
-    function computeRanks(marksData) {
-        const entries = Object.entries(marksData);
-        entries.sort((a, b) => b[1] - a[1]);
-        const ranks = {};
-        let currentRank = 1;
-        for (let i = 0; i < entries.length; i++) {
-            if (i === 0) {
-                ranks[entries[i][0]] = currentRank;
-            } else {
-                if (entries[i][1] === entries[i-1][1]) {
-                    ranks[entries[i][0]] = currentRank;
-                } else {
-                    currentRank = i + 1;
-                    ranks[entries[i][0]] = currentRank;
-                }
-            }
-        }
-        return ranks;
-    }
+// 🔥 YOUR FIREBASE CONFIG
+const firebaseConfig = {
+  apiKey: "AIzaSyDgiwkJWr4vshVu-qv81Y6M52mdj50pJqU",
+  authDomain: "kntcompany-f19e1.firebaseapp.com",
+  projectId: "kntcompany-f19e1",
+};
 
-    const rankMap = computeRanks(studentMarks);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-    function getRank(studentName) {
-        return rankMap[studentName] || "-";
+// ✅ STUDENTS
+const STUDENTS = [
+"മുഹമ്മദ് സയാൻ","ഹാദി സിനാൻ","മുഹമ്മദ് റസിൻ",
+"മുഹമ്മദ് അമീൻ","മുഹമ്മദ് നഹിയാൻ","ഇയാസ് മുബാറക്",
+"ഹൈറ ഫാത്തിമ","ഹന്ന ഫാത്തിമ","ലിയ മെഹറിൻ",
+"ഫാത്തിമ ഹയ","ആയിഷ മെഹറിൻ"
+];
+
+// 🔥 LOAD FROM FIRESTORE
+async function loadScores(){
+
+  let scores = {};
+
+  try{
+    const ref = doc(db, "quizScores", "studentMarks");
+    const snap = await getDoc(ref);
+
+    if(snap.exists()){
+      scores = snap.data().scores || {};
     }
 
-    // ========== ടോപ്പർ ഹൈലൈറ്റ് ==========
-    function getTopperInfo() {
-        let highestMarks = -1;
-        let topperNames = [];
-        for (const [name, marks] of Object.entries(studentMarks)) {
-            if (marks > highestMarks) {
-                highestMarks = marks;
-                topperNames = [name];
-            } else if (marks === highestMarks) {
-                topperNames.push(name);
-            }
-        }
-        if (topperNames.length === 0) return null;
-        return { 
-            name: topperNames[0], 
-            marks: highestMarks, 
-            rank: getRank(topperNames[0]), 
-            tieCount: topperNames.length 
-        };
-    }
+  }catch(e){
+    console.log("Firestore error", e);
+  }
 
-    function renderTopperHighlight() {
-        const topperData = getTopperInfo();
-        const highlightDiv = document.getElementById('topperHighlight');
-        if (!topperData) {
-            highlightDiv.innerHTML = `<div class="topper-label">🌟 ടോപ്പർ വിവരം ലഭ്യമല്ല</div>`;
-            return;
-        }
-        const tieMessage = topperData.tieCount > 1 ? ` (സമ മാർക്ക്: ${topperData.tieCount} പേർ)` : '';
-        highlightDiv.innerHTML = `
-            <div class="topper-label">🏆 ഒന്നാം റാങ്ക് 🏆</div>
-            <div class="topper-name">🎓 ${topperData.name}</div>
-            <div class="topper-rank-badge">✨ റാങ്ക് : ${topperData.rank} ${tieMessage}</div>
-            <div class="topper-marks">📊 മാർക്ക് : ${topperData.marks} / 100</div>
-            <div style="margin-top: 8px; font-size:0.75rem; color:#8b6946;">⭐ മികച്ച പ്രകടനം, അഭിനന്ദനങ്ങൾ! ⭐</div>
-        `;
+  // ✅ ensure all students exist
+  STUDENTS.forEach(name=>{
+    if(scores[name] === undefined){
+      scores[name] = 0;
     }
+  });
 
-    function getTeacherRemark(marks, name) {
-        if (marks >= 85) {
-            return "🏆 അഭിനന്ദനങ്ങൾ " + name + "! മികച്ച പ്രകടനം. പഠനം തുടരുക. 🌟";
-        } else if (marks >= 70) {
-            return "📚 അഭിനന്ദനങ്ങൾ " + name + "! കഠിനാധ്വാനം തുടരുക. ഉയർന്ന വിജയം പ്രതീക്ഷിക്കുന്നു. 👍";
-        } else if (marks >= 50) {
-            return "✅ നല്ല പ്രകടനം " + name + "! കൂടുതൽ പഠനം നടത്തുക. 📖";
-        } else if (marks >= 35) {
-            return "⚠️ " + name + ", ശ്രദ്ധ ആവശ്യമാണ്. ക്ലാസിൽ കൂടുതൽ ശ്രദ്ധിക്കുക. 🎓";
-        } else {
-            return "⚠️ " + name + ", ശ്രദ്ധ ആവശ്യമാണ്. അധ്യാപകരുടെ സഹായം തേടുക. 📚";
-        }
-    }
+  render(scores);
+}
 
-    // ========== CAPTCHA - SIMPLE & DIRECT ==========
-    let currentCaptcha = "";
-    
-    function generateCaptcha() {
-        const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789';
-        let captcha = '';
-        for (let i = 0; i < 5; i++) {
-            captcha += chars[Math.floor(Math.random() * chars.length)];
-        }
-        return captcha;
-    }
-    
-    function refreshCaptcha() {
-        currentCaptcha = generateCaptcha();
-        const captchaSpan = document.getElementById('captchaText');
-        if (captchaSpan) {
-            captchaSpan.textContent = currentCaptcha;
-        }
-        const captchaInput = document.getElementById('captchaInput');
-        if (captchaInput) {
-            captchaInput.value = '';
-            captchaInput.focus();
-        }
-        console.log("🔐 New CAPTCHA:", currentCaptcha);
-    }
-    
-    // ========== MAIN FUNCTION ==========
-    function displayResult() {
-        // Get DOM elements
-        const studentSelect = document.getElementById('studentSelect');
-        const selectedStudent = studentSelect.value;
-        const captchaInput = document.getElementById('captchaInput');
-        const userCaptcha = captchaInput ? captchaInput.value : '';
-        const resultDiv = document.getElementById('resultContainer');
-        
-        console.log("=== Display Result ===");
-        console.log("Student:", selectedStudent);
-        console.log("User input:", `"${userCaptcha}"`);
-        console.log("Current CAPTCHA:", `"${currentCaptcha}"`);
-        
-        // Check 1: Student selected?
-        if (!selectedStudent) {
-            resultDiv.classList.remove('hidden');
-            resultDiv.innerHTML = `<div class="error-msg">⚠️ ദയവായി ഒരു വിദ്യാർത്ഥിയെ തിരഞ്ഞെടുക്കുക.</div>`;
-            return;
-        }
-        
-        // Check 2: CAPTCHA empty?
-        if (!userCaptcha || userCaptcha.trim() === "") {
-            resultDiv.classList.remove('hidden');
-            resultDiv.innerHTML = `<div class="error-msg">🔐 ക്യാപ്ച്ച കോഡ് നൽകുക!<br>
-            📌 കാണുന്ന കോഡ്: <strong style="font-size:1.2rem;">${currentCaptcha}</strong><br>
-            ✏️ ഇത് ശ്രദ്ധിച്ച് ടൈപ്പ് ചെയ്യുക.</div>`;
-            captchaInput.focus();
-            return;
-        }
-        
-        // Check 3: CAPTCHA match (case insensitive, trim spaces)
-        const normalizedInput = userCaptcha.trim().toUpperCase();
-        const normalizedCaptcha = currentCaptcha.trim().toUpperCase();
-        
-        console.log("Normalized Input:", normalizedInput);
-        console.log("Normalized Captcha:", normalizedCaptcha);
-        
-        if (normalizedInput !== normalizedCaptcha) {
-            resultDiv.classList.remove('hidden');
-            resultDiv.innerHTML = `<div class="error-msg">❌ ക്യാപ്ച്ച തെറ്റാണ്!<br>
-            📝 നിങ്ങൾ നൽകിയത്: "${userCaptcha}"<br>
-            ✅ ശരിയായ കോഡ്: "${currentCaptcha}"<br>
-            💡 ചെറിയക്ഷരം/വലിയക്ഷരം പ്രശ്നമില്ല.</div>`;
-            refreshCaptcha(); // New CAPTCHA for next try
-            return;
-        }
-        
-        // Check 4: Get marks
-        const marks = studentMarks[selectedStudent];
-        if (marks === undefined) {
-            resultDiv.classList.remove('hidden');
-            resultDiv.innerHTML = `<div class="error-msg">📌 വിവരം ലഭ്യമല്ല. അധ്യാപകനെ സമീപിക്കുക.</div>`;
-            refreshCaptcha();
-            return;
-        }
-        
-        // SUCCESS! Display result
-        const studentRank = getRank(selectedStudent);
-        let rankEmoji = "";
-        if (studentRank === 1) rankEmoji = "🥇 ഒന്നാം റാങ്ക്";
-        else if (studentRank === 2) rankEmoji = "🥈 രണ്ടാം റാങ്ക്";
-        else if (studentRank === 3) rankEmoji = "🥉 മൂന്നാം റാങ്ക്";
-        else rankEmoji = `🎖️ ${studentRank}-ാം റാങ്ക്`;
-        
-        const remark = getTeacherRemark(marks, selectedStudent);
-        
-        resultDiv.innerHTML = `
-            <div class="result-name">🎓 ${selectedStudent}</div>
-            <div class="marks-badge">📊 ${marks} / 100</div>
-            <div class="rank-badge">📌 ${rankEmoji}</div>
-            <div class="teacher-remark">
-                ✨ ${remark}
-            </div>
-            <div style="margin-top: 16px; font-size:0.7rem; color:#8b7a5c;">✨ ഹിമായത്തുൽ ഇസ്ലാം മദ്രസ - മാസ പരീക്ഷാ ഫലം ✨</div>
-        `;
-        resultDiv.classList.remove('hidden');
-        
-        // Refresh CAPTCHA for next search
-        refreshCaptcha();
-    }
-    
-    // ========== Initialize ==========
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log("Page Loaded - Initializing...");
-        
-        // Initialize CAPTCHA
-        refreshCaptcha();
-        
-        // Render topper
-        renderTopperHighlight();
-        
-        // Setup button click
-        const showBtn = document.getElementById('showResultBtn');
-        if (showBtn) {
-            showBtn.addEventListener('click', displayResult);
-        }
-        
-        // Setup refresh button
-        const refreshBtn = document.getElementById('refreshCaptchaBtn');
-        if (refreshBtn) {
-            refreshBtn.addEventListener('click', refreshCaptcha);
-        }
-        
-        // Setup Enter key on captcha input
-        const captchaInput = document.getElementById('captchaInput');
-        if (captchaInput) {
-            captchaInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    displayResult();
-                }
-            });
-        }
-        
-        // Clear result when student changes
-        const studentSelect = document.getElementById('studentSelect');
-        if (studentSelect) {
-            studentSelect.addEventListener('change', () => {
-                const resultDiv = document.getElementById('resultContainer');
-                if (resultDiv) resultDiv.classList.add('hidden');
-            });
-        }
-        
-        console.log("Initialization Complete!");
-    });
+// 🎯 RENDER
+function render(scores){
+
+  const tbody = document.getElementById("tbody");
+  tbody.innerHTML = "";
+
+  const sorted = Object.entries(scores)
+    .sort((a,b)=>b[1]-a[1]);
+
+  document.getElementById("topStudent").innerHTML =
+    `🏆 ${sorted[0][0]} - ${sorted[0][1]} മാർക്ക്`;
+
+  sorted.forEach((s,i)=>{
+
+    let cls="", medal="";
+    if(i===0){cls="gold"; medal="🥇";}
+    else if(i===1){cls="silver"; medal="🥈";}
+    else if(i===2){cls="bronze"; medal="🥉";}
+
+    const tr = document.createElement("tr");
+    tr.className = cls;
+
+    tr.innerHTML = `
+      <td>${i+1} ${medal}</td>
+      <td>${s[0]}</td>
+      <td>${s[1]}</td>
+    `;
+
+    tbody.appendChild(tr);
+  });
+}
+
+// START
+loadScores();
+
+// 📄 PDF FUNCTION (outside module)
+window.downloadPDF = async function(){
+  const { jsPDF } = window.jspdf;
+
+  const canvas = await html2canvas(document.getElementById("report"),{scale:2});
+  const img = canvas.toDataURL("image/png");
+
+  const pdf = new jsPDF('p','mm','a4');
+  const width = 190;
+  const height = canvas.height * width / canvas.width;
+
+  pdf.addImage(img,'PNG',10,10,width,height);
+  pdf.save("quiz-result.pdf");
+}
 </script>
+
+<!-- PDF LIBS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </body>
 </html>
