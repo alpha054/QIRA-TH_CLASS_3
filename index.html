@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة التوبة | الآيات 48-54 - للأطفال</title>
+<title>سورة الحاقة | الآيات 46-52 (ختام السورة) - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -13,7 +13,7 @@
   }
 
   body {
-    background: linear-gradient(145deg, #f6f3ea 0%, #ece3d4 100%);
+    background: linear-gradient(145deg, #f0ede5 0%, #e2dbcE 100%);
     font-family: 'Scheherazade New', 'Cairo', serif;
     min-height: 100vh;
     direction: rtl;
@@ -26,7 +26,6 @@
     padding: 20px 16px 40px;
   }
 
-  /* header section */
   .surah-header {
     background: #ffffffcc;
     backdrop-filter: blur(4px);
@@ -35,13 +34,13 @@
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e0d4c0;
+    border: 1px solid #d6cbb4;
   }
 
   .surah-title {
     font-size: clamp(1.8rem, 6vw, 2.6rem);
     font-weight: 800;
-    color: #8b5a2b;
+    color: #6d4c2c;
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
@@ -54,17 +53,17 @@
   }
   .title-secondary {
     font-size: 0.85rem;
-    background: #f1e8da;
+    background: #ede3d0;
     padding: 3px 14px;
     border-radius: 100px;
     font-family: 'Cairo', sans-serif;
-    color: #6b4a25;
+    color: #6d4c2c;
   }
 
   .verse-range {
     font-family: 'Cairo', sans-serif;
     font-size: 0.9rem;
-    background: #e6dbcA;
+    background: #e3d8c4;
     display: inline-block;
     padding: 4px 22px;
     border-radius: 40px;
@@ -80,13 +79,12 @@
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #7a4f2a;
+    color: #7a562e;
     margin-bottom: 24px;
-    border-right: 4px solid #b97f44;
+    border-right: 4px solid #b58c4d;
     font-family: 'Cairo', sans-serif;
   }
 
-  /* audio control - clean */
   .audio-section {
     background: #ffffff;
     border-radius: 60px;
@@ -98,11 +96,11 @@
     flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    border: 1px solid #d6ccb8;
+    border: 1px solid #d4c8b0;
   }
 
   .play-button {
-    background: #8b5a2b;
+    background: #6d4c2c;
     width: 54px;
     height: 54px;
     border-radius: 50%;
@@ -111,13 +109,13 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 6px 12px rgba(139, 90, 43, 0.25);
+    box-shadow: 0 6px 12px rgba(109, 76, 44, 0.25);
     border: none;
     font-size: 1.6rem;
     color: white;
   }
   .play-button:hover {
-    background: #6f451f;
+    background: #543a20;
     transform: scale(1.02);
   }
   .play-button:active {
@@ -143,14 +141,13 @@
     overflow: hidden;
   }
   .progress-fill {
-    background: #b97f44;
+    background: #b58c4d;
     width: 0%;
     height: 100%;
     border-radius: 8px;
     transition: width 0.2s linear;
   }
 
-  /* verses list - clean, no emojis */
   .verses-list {
     display: flex;
     flex-direction: column;
@@ -167,8 +164,8 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.02);
   }
   .verse-item.active {
-    background: #fffcf5;
-    border-right: 6px solid #b97f44;
+    background: #fffef5;
+    border-right: 6px solid #b58c4d;
     box-shadow: 0 10px 20px -10px rgba(100, 60, 20, 0.12);
     transform: translateY(-1px);
   }
@@ -192,7 +189,7 @@
     justify-content: center;
     border-radius: 40px;
     font-size: 1rem;
-    color: #8b5a2b;
+    color: #6d4c2c;
     border: 1px solid #c7bb9E;
     flex-shrink: 0;
   }
@@ -217,17 +214,9 @@
   }
 
   @media (max-width: 520px) {
-    .verse-item {
-      padding: 14px 16px;
-    }
-    .verse-num {
-      width: 34px;
-      height: 34px;
-      font-size: 0.85rem;
-    }
-    .audio-section {
-      gap: 12px;
-    }
+    .verse-item { padding: 14px 16px; }
+    .verse-num { width: 34px; height: 34px; font-size: 0.85rem; }
+    .audio-section { gap: 12px; }
   }
 </style>
 </head>
@@ -235,17 +224,16 @@
 <div class="container">
   <div class="surah-header">
     <div class="surah-title">
-      <span class="title-arabic">سُورَةُ التَّوْبَة</span>
-      <span class="title-secondary">(البراءة)</span>
+      <span class="title-arabic">سُورَةُ الْحَاقَّةِ</span>
+      <span class="title-secondary">(الواقعة الحق)</span>
     </div>
-    <div class="verse-range">الآيات ٤٨ – ٥٤</div>
+    <div class="verse-range">الآيات ٤٦ – ٥٢ (ختام السورة)</div>
   </div>
 
   <div class="surah-note">
-    ﴿ وَقَالُوا لَنْ نُؤْمِنَ لَكَ حَتَّىٰ تَفْجُرَ لَنَا مِنَ الْأَرْضِ يَنْبُوعًا ﴾
+    ﴿ فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ ﴾
   </div>
 
-  <!-- audio panel -->
   <div class="audio-section">
     <button class="play-button" id="playToggleBtn" aria-label="play/pause">▶︎</button>
     <div class="audio-status">
@@ -254,7 +242,6 @@
     </div>
   </div>
 
-  <!-- verses container: 48,49,50,51,52,53,54 from Surat At-Tawbah -->
   <div class="verses-list" id="versesList"></div>
   <div class="footer-note">✨ اضغط على أي آية للانتقال إليها · تلاوة واضحة للأطفال · انتقال تلقائي بين الآيات</div>
 </div>
@@ -262,37 +249,33 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AT-TAWBAH (9) VERSES 48 – 54 ======================
-  // Authentic Arabic text (Uthmani script)
+  // ====================== SURAH AL-HAQQAH (69) VERSES 46 – 52 (END) ======================
   const versesData = [
-    { num: 48, arabic: "وَلَقَدِ ابْتَغَوُا الْفِتْنَةَ مِنْ قَبْلُ وَقَلَّبُوا لَكَ الْأُمُورَ حَتَّىٰ جَاءَ الْحَقُّ وَظَهَرَ أَمْرُ اللَّهِ وَهُمْ كَارِهُونَ" },
-    { num: 49, arabic: "وَمِنْهُمْ مَنْ يَقُولُ ائْذَنْ لِي وَلَا تَفْتِنِّي ۚ أَلَا فِي الْفِتْنَةِ سَقَطُوا ۗ وَإِنَّ جَهَنَّمَ لَمُحِيطَةٌ بِالْكَافِرِينَ" },
-    { num: 50, arabic: "إِنْ تُصِبْكَ حَسَنَةٌ تَسُؤْهُمْ ۖ وَإِنْ تُصِبْكَ مُصِيبَةٌ يَقُولُوا قَدْ أَخَذْنَا أَمْرَنَا مِنْ قَبْلُ وَيَتَوَلَّوْا وَهُمْ فَرِحُونَ" },
-    { num: 51, arabic: "قُلْ لَنْ يُصِيبَنَا إِلَّا مَا كَتَبَ اللَّهُ لَنَا هُوَ مَوْلَانَا ۚ وَعَلَى اللَّهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ" },
-    { num: 52, arabic: "قُلْ هَلْ تَرَبَّصُونَ بِنَا إِلَّا إِحْدَى الْحُسْنَيَيْنِ ۖ وَنَحْنُ نَتَرَبَّصُ بِكُمْ أَنْ يُصِيبَكُمُ اللَّهُ بِعَذَابٍ مِنْ عِنْدِهِ أَوْ بِأَيْدِينَا ۖ فَتَرَبَّصُوا إِنَّا مَعَكُمْ مُتَرَبِّصُونَ" },
-    { num: 53, arabic: "قُلْ أَنْفِقُوا طَوْعًا أَوْ كَرْهًا لَنْ يُتَقَبَّلَ مِنْكُمْ ۖ إِنَّكُمْ كُنْتُمْ قَوْمًا فَاسِقِينَ" },
-    { num: 54, arabic: "وَمَا مَنَعَهُمْ أَنْ تُقْبَلَ مِنْهُمْ نَفَقَاتُهُمْ إِلَّا أَنَّهُمْ كَفَرُوا بِاللَّهِ وَبِرَسُولِهِ وَلَا يَأْتُونَ الصَّلَاةَ إِلَّا وَهُمْ كُسَالَىٰ وَلَا يُنْفِقُونَ إِلَّا وَهُمْ كَارِهُونَ" }
+    { num: 46, arabic: "ثُمَّ لَقَطَعْنَا مِنْهُ الْوَتِينَ" },
+    { num: 47, arabic: "فَمَا مِنْكُمْ مِنْ أَحَدٍ عَنْهُ حَاجِزِينَ" },
+    { num: 48, arabic: "وَإِنَّهُ لَتَذْكِرَةٌ لِلْمُتَّقِينَ" },
+    { num: 49, arabic: "وَإِنَّا لَنَعْلَمُ أَنَّ مِنْكُمْ مُكَذِّبِينَ" },
+    { num: 50, arabic: "وَإِنَّهُ لَحَسْرَةٌ عَلَى الْكَافِرِينَ" },
+    { num: 51, arabic: "وَإِنَّهُ لَحَقُّ الْيَقِينِ" },
+    { num: 52, arabic: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ" }
   ];
 
-  // Audio URLs: Surah 009 At-Tawbah (Alafasy high quality)
   function getAyahUrl(verseNumber) {
-    const surahCode = "009";
+    const surahCode = "069";
     const versePadded = String(verseNumber).padStart(3, '0');
     return `https://everyayah.com/data/Alafasy_128kbps/${surahCode}${versePadded}.mp3`;
   }
 
-  // DOM elements
   const versesContainer = document.getElementById('versesList');
   const audioElem = document.getElementById('quranAudio');
   const playBtn = document.getElementById('playToggleBtn');
   const statusLabel = document.getElementById('audioStatusLabel');
   const progressFillBar = document.getElementById('audioProgressFill');
 
-  let currentIdx = 0;            // 0-based index (0 -> verse 48)
+  let currentIdx = 0;
   let isPlaying = false;
   let autoNextTimeout = null;
 
-  // Build verse cards: clean, professional, no emojis
   function buildVerses() {
     versesContainer.innerHTML = '';
     versesData.forEach((verse, idx) => {
@@ -314,37 +297,27 @@
     });
   }
 
-  // update active highlight and auto-scroll (smooth)
   function setActiveVerse(index, smoothScroll = true) {
     const cards = document.querySelectorAll('.verse-item');
     cards.forEach((card, i) => {
       if (i === index) card.classList.add('active');
       else card.classList.remove('active');
     });
-    // progress fill: based on current index (total 7 verses)
     const progressPercent = ((index + 1) / versesData.length) * 100;
     progressFillBar.style.width = `${progressPercent}%`;
     
     if (smoothScroll) {
       const activeCard = document.querySelector(`.verse-item[data-index='${index}']`);
       if (activeCard) {
-        activeCard.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'nearest'
-        });
+        activeCard.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
       }
     }
   }
 
   function clearNextTimeout() {
-    if (autoNextTimeout) {
-      clearTimeout(autoNextTimeout);
-      autoNextTimeout = null;
-    }
+    if (autoNextTimeout) { clearTimeout(autoNextTimeout); autoNextTimeout = null; }
   }
 
-  // update status text
   function updateUIStatus(verseIdx, playing) {
     const verseNum = versesData[verseIdx].num;
     if (playing) {
@@ -360,22 +333,15 @@
     }
   }
 
-  // load and play specific verse by index (autoContinue = true means after finish go next)
   function playVerse(index, autoContinue = true) {
     if (index < 0 || index >= versesData.length) return;
     clearNextTimeout();
-    
-    // stop any ongoing playback
     audioElem.pause();
     isPlaying = false;
-    
     currentIdx = index;
     const verse = versesData[currentIdx];
-    const audioUrl = getAyahUrl(verse.num);
-    
-    audioElem.src = audioUrl;
+    audioElem.src = getAyahUrl(verse.num);
     audioElem.load();
-    
     setActiveVerse(currentIdx, true);
     updateUIStatus(currentIdx, true);
     
@@ -385,65 +351,42 @@
         isPlaying = true;
         playBtn.innerHTML = '⏸︎';
         updateUIStatus(currentIdx, true);
-        
         if (autoContinue) {
           audioElem.onended = () => {
-            // after verse ends, move to next if exists
             if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => {
-                playVerse(currentIdx + 1, true);
-              }, 520);
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
             } else {
-              // end of the selected range (verse 54)
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٤٨–٥٤) من سورة التوبة 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة خاتمة سورة الحاقة 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
             }
           };
-        } else {
-          audioElem.onended = null;
         }
       }).catch(err => {
-        console.warn("Audio play blocked:", err);
         isPlaying = false;
         playBtn.innerHTML = '▶︎';
-        statusLabel.innerHTML = '⚠️ يرجى التفاعل المباشر لتشغيل الصوت';
+        statusLabel.innerHTML = '⚠️ يرجى التفاعل المباشر';
         clearNextTimeout();
       });
     }
-    
-    // handle pause event externally
     audioElem.onpause = () => {
-      if (isPlaying) {
-        isPlaying = false;
-        playBtn.innerHTML = '▶︎';
-        updateUIStatus(currentIdx, false);
-        clearNextTimeout();
-      }
+      if (isPlaying) { isPlaying = false; playBtn.innerHTML = '▶︎'; updateUIStatus(currentIdx, false); clearNextTimeout(); }
     };
     audioElem.onplay = () => {
-      if (!isPlaying) {
-        isPlaying = true;
-        playBtn.innerHTML = '⏸︎';
-        updateUIStatus(currentIdx, true);
-      }
+      if (!isPlaying) { isPlaying = true; playBtn.innerHTML = '⏸︎'; updateUIStatus(currentIdx, true); }
     };
     audioElem.onerror = () => {
-      isPlaying = false;
-      playBtn.innerHTML = '▶︎';
-      statusLabel.innerHTML = '⚠️ خطأ في تحميل التلاوة، تحقق من الاتصال';
+      isPlaying = false; playBtn.innerHTML = '▶︎'; statusLabel.innerHTML = '⚠️ خطأ في التحميل';
       clearNextTimeout();
     };
   }
 
-  // jump to specific verse when user clicks
   function jumpToVerse(index) {
     clearNextTimeout();
     if (index === currentIdx && isPlaying) {
-      // restart current verse for better experience
       audioElem.pause();
       playVerse(index, true);
     } else {
@@ -451,17 +394,13 @@
     }
   }
 
-  // master toggle: play/pause / resume / restart if finished
   function togglePlayback() {
     if (!audioElem.src || audioElem.ended) {
-      if (audioElem.ended) {
-        currentIdx = 0;
-      }
+      if (audioElem.ended) currentIdx = 0;
       clearNextTimeout();
       playVerse(currentIdx, true);
       return;
     }
-    
     if (isPlaying) {
       audioElem.pause();
       isPlaying = false;
@@ -470,58 +409,32 @@
       clearNextTimeout();
       audioElem.onended = null;
     } else {
-      const resumePlay = audioElem.play();
-      if (resumePlay !== undefined) {
-        resumePlay.then(() => {
-          isPlaying = true;
-          playBtn.innerHTML = '⏸︎';
-          updateUIStatus(currentIdx, true);
-          // Re-attach ended event for auto next
-          audioElem.onended = () => {
-            if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => {
-                playVerse(currentIdx + 1, true);
-              }, 520);
-            } else {
-              isPlaying = false;
-              playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✨ أتممت الآيات (التوبة ٤٨–٥٤) ✨';
-              progressFillBar.style.width = '100%';
-              audioElem.onended = null;
-            }
-          };
-        }).catch(err => {
-          statusLabel.innerHTML = '⚠️ يلزم تفاعل لتشغيل الصوت';
-        });
-      }
+      audioElem.play().then(() => {
+        isPlaying = true;
+        playBtn.innerHTML = '⏸︎';
+        updateUIStatus(currentIdx, true);
+        audioElem.onended = () => {
+          if (currentIdx + 1 < versesData.length) {
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+          } else {
+            isPlaying = false; playBtn.innerHTML = '▶︎';
+            statusLabel.innerHTML = '✨ أتممت الآيات (٤٦–٥٢) من الحاقة ✨';
+            progressFillBar.style.width = '100%';
+          }
+        };
+      }).catch(() => { statusLabel.innerHTML = '⚠️ يلزم تفاعل'; });
     }
   }
 
-  // safety: if audio ends without timeout
-  audioElem.addEventListener('ended', () => {
-    if (!autoNextTimeout && currentIdx + 1 >= versesData.length) {
-      isPlaying = false;
-      playBtn.innerHTML = '▶︎';
-      statusLabel.innerHTML = '🔖 تمت ختم الآيات (٤٨–٥٤) من سورة التوبة';
-      progressFillBar.style.width = '100%';
-    }
-  });
-
-  // initialise the application
   function init() {
     buildVerses();
     setActiveVerse(0, false);
-    isPlaying = false;
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات التوبة ٤٨–٥٤';
+    statusLabel.innerHTML = '🎙️ استمع لآيات الحاقة ٤٦–٥٢';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
-    playBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      togglePlayback();
-    });
+    playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
   }
-  
   init();
 </script>
 </body>
