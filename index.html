@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة الحاقة | الآيات 46-52 (ختام السورة) - للأطفال</title>
+<title>سورة المعارج | الآيات 1-10 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -13,7 +13,7 @@
   }
 
   body {
-    background: linear-gradient(145deg, #f0ede5 0%, #e2dbcE 100%);
+    background: linear-gradient(145deg, #eef2f0 0%, #dfe6dc 100%);
     font-family: 'Scheherazade New', 'Cairo', serif;
     min-height: 100vh;
     direction: rtl;
@@ -34,13 +34,13 @@
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #d6cbb4;
+    border: 1px solid #cad6c0;
   }
 
   .surah-title {
     font-size: clamp(1.8rem, 6vw, 2.6rem);
     font-weight: 800;
-    color: #6d4c2c;
+    color: #3d6b3a;
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
@@ -53,23 +53,23 @@
   }
   .title-secondary {
     font-size: 0.85rem;
-    background: #ede3d0;
+    background: #e2ecd9;
     padding: 3px 14px;
     border-radius: 100px;
     font-family: 'Cairo', sans-serif;
-    color: #6d4c2c;
+    color: #3d6b3a;
   }
 
   .verse-range {
     font-family: 'Cairo', sans-serif;
     font-size: 0.9rem;
-    background: #e3d8c4;
+    background: #d9e8d0;
     display: inline-block;
     padding: 4px 22px;
     border-radius: 40px;
     margin-top: 8px;
     font-weight: 600;
-    color: #5a3e1f;
+    color: #2a5a2a;
   }
 
   .surah-note {
@@ -79,9 +79,9 @@
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #7a562e;
+    color: #4a7a2e;
     margin-bottom: 24px;
-    border-right: 4px solid #b58c4d;
+    border-right: 4px solid #5a9e3e;
     font-family: 'Cairo', sans-serif;
   }
 
@@ -96,11 +96,11 @@
     flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    border: 1px solid #d4c8b0;
+    border: 1px solid #c8dbbc;
   }
 
   .play-button {
-    background: #6d4c2c;
+    background: #3d6b3a;
     width: 54px;
     height: 54px;
     border-radius: 50%;
@@ -109,13 +109,13 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 6px 12px rgba(109, 76, 44, 0.25);
+    box-shadow: 0 6px 12px rgba(61, 107, 58, 0.25);
     border: none;
     font-size: 1.6rem;
     color: white;
   }
   .play-button:hover {
-    background: #543a20;
+    background: #2d552a;
     transform: scale(1.02);
   }
   .play-button:active {
@@ -130,10 +130,10 @@
     font-family: 'Cairo', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #7a562e;
+    color: #4a7a2e;
   }
   .progress-bar-bg {
-    background: #e7dfd3;
+    background: #e0e8d8;
     height: 5px;
     border-radius: 8px;
     margin-top: 6px;
@@ -141,7 +141,7 @@
     overflow: hidden;
   }
   .progress-fill {
-    background: #b58c4d;
+    background: #5a9e3e;
     width: 0%;
     height: 100%;
     border-radius: 8px;
@@ -159,14 +159,14 @@
     border-radius: 28px;
     padding: 18px 22px;
     transition: all 0.2s ease;
-    border: 1px solid #ddd1bc;
+    border: 1px solid #d4e0ca;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.02);
   }
   .verse-item.active {
-    background: #fffef5;
-    border-right: 6px solid #b58c4d;
-    box-shadow: 0 10px 20px -10px rgba(100, 60, 20, 0.12);
+    background: #f6ffed;
+    border-right: 6px solid #5a9e3e;
+    box-shadow: 0 10px 20px -10px rgba(60, 100, 30, 0.12);
     transform: translateY(-1px);
   }
 
@@ -175,13 +175,13 @@
     align-items: baseline;
     gap: 14px;
     margin-bottom: 8px;
-    border-bottom: 1px dashed #ddd0ba;
+    border-bottom: 1px dashed #d4e0ca;
     padding-bottom: 6px;
   }
   .verse-num {
     font-family: 'Cairo', monospace;
     font-weight: 800;
-    background: #f3ede4;
+    background: #eff5e8;
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -189,8 +189,8 @@
     justify-content: center;
     border-radius: 40px;
     font-size: 1rem;
-    color: #6d4c2c;
-    border: 1px solid #c7bb9E;
+    color: #3d6b3a;
+    border: 1px solid #c0d8b0;
     flex-shrink: 0;
   }
   .arabic-text {
@@ -208,8 +208,8 @@
     margin-top: 34px;
     font-family: 'Cairo', sans-serif;
     font-size: 0.75rem;
-    color: #9b7b58;
-    border-top: 1px solid #e2d4c0;
+    color: #8ba87a;
+    border-top: 1px solid #d4e0ca;
     padding-top: 20px;
   }
 
@@ -224,14 +224,14 @@
 <div class="container">
   <div class="surah-header">
     <div class="surah-title">
-      <span class="title-arabic">سُورَةُ الْحَاقَّةِ</span>
-      <span class="title-secondary">(الواقعة الحق)</span>
+      <span class="title-arabic">سُورَةُ الْمَعَارِجِ</span>
+      <span class="title-secondary">(المعارج)</span>
     </div>
-    <div class="verse-range">الآيات ٤٦ – ٥٢ (ختام السورة)</div>
+    <div class="verse-range">الآيات ١ – ١٠</div>
   </div>
 
   <div class="surah-note">
-    ﴿ فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ ﴾
+    ﴿ سَأَلَ سَائِلٌ بِعَذَابٍ وَاقِعٍ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,19 +249,22 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-HAQQAH (69) VERSES 46 – 52 (END) ======================
+  // ====================== SURAH AL-MA'ARIJ (70) VERSES 1 – 10 ======================
   const versesData = [
-    { num: 46, arabic: "ثُمَّ لَقَطَعْنَا مِنْهُ الْوَتِينَ" },
-    { num: 47, arabic: "فَمَا مِنْكُمْ مِنْ أَحَدٍ عَنْهُ حَاجِزِينَ" },
-    { num: 48, arabic: "وَإِنَّهُ لَتَذْكِرَةٌ لِلْمُتَّقِينَ" },
-    { num: 49, arabic: "وَإِنَّا لَنَعْلَمُ أَنَّ مِنْكُمْ مُكَذِّبِينَ" },
-    { num: 50, arabic: "وَإِنَّهُ لَحَسْرَةٌ عَلَى الْكَافِرِينَ" },
-    { num: 51, arabic: "وَإِنَّهُ لَحَقُّ الْيَقِينِ" },
-    { num: 52, arabic: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ" }
+    { num: 1, arabic: "سَأَلَ سَائِلٌ بِعَذَابٍ وَاقِعٍ" },
+    { num: 2, arabic: "لِلْكَافِرِينَ لَيْسَ لَهُ دَافِعٌ" },
+    { num: 3, arabic: "مِنَ اللَّهِ ذِي الْمَعَارِجِ" },
+    { num: 4, arabic: "تَعْرُجُ الْمَلَائِكَةُ وَالرُّوحُ إِلَيْهِ فِي يَوْمٍ كَانَ مِقْدَارُهُ خَمْسِينَ أَلْفَ سَنَةٍ" },
+    { num: 5, arabic: "فَاصْبِرْ صَبْرًا جَمِيلًا" },
+    { num: 6, arabic: "إِنَّهُمْ يَرَوْنَهُ بَعِيدًا" },
+    { num: 7, arabic: "وَنَرَاهُ قَرِيبًا" },
+    { num: 8, arabic: "يَوْمَ تَكُونُ السَّمَاءُ كَالْمُهْلِ" },
+    { num: 9, arabic: "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ" },
+    { num: 10, arabic: "وَلَا يَسْأَلُ حَمِيمٌ حَمِيمًا" }
   ];
 
   function getAyahUrl(verseNumber) {
-    const surahCode = "069";
+    const surahCode = "070";
     const versePadded = String(verseNumber).padStart(3, '0');
     return `https://everyayah.com/data/Alafasy_128kbps/${surahCode}${versePadded}.mp3`;
   }
@@ -358,7 +361,7 @@
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة خاتمة سورة الحاقة 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١–١٠) من سورة المعارج 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -418,7 +421,7 @@
             autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (٤٦–٥٢) من الحاقة ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (المعارج ١–١٠) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -430,7 +433,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات الحاقة ٤٦–٥٢';
+    statusLabel.innerHTML = '🎙️ استمع لآيات المعارج ١–١٠';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
