@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة المعارج | الآيات 10-20 - للأطفال</title>
+<title>سورة التوبة | الآيات 80-86 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -13,7 +14,7 @@
   }
 
   body {
-    background: linear-gradient(145deg, #eef2f0 0%, #dfe6dc 100%);
+    background: linear-gradient(145deg, #f6f3ea 0%, #ece3d4 100%);
     font-family: 'Scheherazade New', 'Cairo', serif;
     min-height: 100vh;
     direction: rtl;
@@ -34,13 +35,13 @@
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #cad6c0;
+    border: 1px solid #e0d4c0;
   }
 
   .surah-title {
     font-size: clamp(1.8rem, 6vw, 2.6rem);
     font-weight: 800;
-    color: #3d6b3a;
+    color: #8b5a2b;
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
@@ -53,23 +54,23 @@
   }
   .title-secondary {
     font-size: 0.85rem;
-    background: #e2ecd9;
+    background: #f1e8da;
     padding: 3px 14px;
     border-radius: 100px;
     font-family: 'Cairo', sans-serif;
-    color: #3d6b3a;
+    color: #6b4a25;
   }
 
   .verse-range {
     font-family: 'Cairo', sans-serif;
     font-size: 0.9rem;
-    background: #d9e8d0;
+    background: #e6dbcA;
     display: inline-block;
     padding: 4px 22px;
     border-radius: 40px;
     margin-top: 8px;
     font-weight: 600;
-    color: #2a5a2a;
+    color: #5a3e1f;
   }
 
   .surah-note {
@@ -79,9 +80,9 @@
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #4a7a2e;
+    color: #7a4f2a;
     margin-bottom: 24px;
-    border-right: 4px solid #5a9e3e;
+    border-right: 4px solid #b97f44;
     font-family: 'Cairo', sans-serif;
   }
 
@@ -96,11 +97,11 @@
     flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    border: 1px solid #c8dbbc;
+    border: 1px solid #d6ccb8;
   }
 
   .play-button {
-    background: #3d6b3a;
+    background: #8b5a2b;
     width: 54px;
     height: 54px;
     border-radius: 50%;
@@ -109,13 +110,13 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 6px 12px rgba(61, 107, 58, 0.25);
+    box-shadow: 0 6px 12px rgba(139, 90, 43, 0.25);
     border: none;
     font-size: 1.6rem;
     color: white;
   }
   .play-button:hover {
-    background: #2d552a;
+    background: #6f451f;
     transform: scale(1.02);
   }
   .play-button:active {
@@ -130,10 +131,10 @@
     font-family: 'Cairo', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #4a7a2e;
+    color: #7a562e;
   }
   .progress-bar-bg {
-    background: #e0e8d8;
+    background: #e7dfd3;
     height: 5px;
     border-radius: 8px;
     margin-top: 6px;
@@ -141,7 +142,7 @@
     overflow: hidden;
   }
   .progress-fill {
-    background: #5a9e3e;
+    background: #b97f44;
     width: 0%;
     height: 100%;
     border-radius: 8px;
@@ -159,14 +160,14 @@
     border-radius: 28px;
     padding: 18px 22px;
     transition: all 0.2s ease;
-    border: 1px solid #d4e0ca;
+    border: 1px solid #ddd1bc;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.02);
   }
   .verse-item.active {
-    background: #f6ffed;
-    border-right: 6px solid #5a9e3e;
-    box-shadow: 0 10px 20px -10px rgba(60, 100, 30, 0.12);
+    background: #fffcf5;
+    border-right: 6px solid #b97f44;
+    box-shadow: 0 10px 20px -10px rgba(100, 60, 20, 0.12);
     transform: translateY(-1px);
   }
 
@@ -175,13 +176,13 @@
     align-items: baseline;
     gap: 14px;
     margin-bottom: 8px;
-    border-bottom: 1px dashed #d4e0ca;
+    border-bottom: 1px dashed #ddd0ba;
     padding-bottom: 6px;
   }
   .verse-num {
     font-family: 'Cairo', monospace;
     font-weight: 800;
-    background: #eff5e8;
+    background: #f3ede4;
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -189,8 +190,8 @@
     justify-content: center;
     border-radius: 40px;
     font-size: 1rem;
-    color: #3d6b3a;
-    border: 1px solid #c0d8b0;
+    color: #8b5a2b;
+    border: 1px solid #c7bb9E;
     flex-shrink: 0;
   }
   .arabic-text {
@@ -208,8 +209,8 @@
     margin-top: 34px;
     font-family: 'Cairo', sans-serif;
     font-size: 0.75rem;
-    color: #8ba87a;
-    border-top: 1px solid #d4e0ca;
+    color: #9b7b58;
+    border-top: 1px solid #e2d4c0;
     padding-top: 20px;
   }
 
@@ -224,14 +225,14 @@
 <div class="container">
   <div class="surah-header">
     <div class="surah-title">
-      <span class="title-arabic">سُورَةُ الْمَعَارِجِ</span>
-      <span class="title-secondary">(المعارج)</span>
+      <span class="title-arabic">سُورَةُ التَّوْبَة</span>
+      <span class="title-secondary">(البراءة)</span>
     </div>
-    <div class="verse-range">الآيات ١٠ – ٢٠</div>
+    <div class="verse-range">الآيات ٨٠ – ٨٦</div>
   </div>
 
   <div class="surah-note">
-    ﴿ إِنَّ الْإِنْسَانَ خُلِقَ هَلُوعًا ﴾
+    ﴿ اسْتَغْفِرْ لَهُمْ أَوْ لَا تَسْتَغْفِرْ لَهُمْ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,24 +250,19 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-MA'ARIJ (70) VERSES 10 – 20 ======================
-  // Verse 10 is included as the starting point, then 11 through 20
+  // ====================== SURAH AT-TAWBAH (9) VERSES 80 – 86 ======================
   const versesData = [
-    { num: 10, arabic: "وَلَا يَسْأَلُ حَمِيمٌ حَمِيمًا" },
-    { num: 11, arabic: "يُبَصَّرُونَهُمْ ۚ يَوَدُّ الْمُجْرِمُ لَوْ يَفْتَدِي مِنْ عَذَابِ يَوْمِئِذٍ بِبَنِيهِ" },
-    { num: 12, arabic: "وَصَاحِبَتِهِ وَأَخِيهِ" },
-    { num: 13, arabic: "وَفَصِيلَتِهِ الَّتِي تُؤْوِيهِ" },
-    { num: 14, arabic: "وَمَنْ فِي الْأَرْضِ جَمِيعًا ثُمَّ يُنْجِيهِ" },
-    { num: 15, arabic: "كَلَّا ۖ إِنَّهَا لَظَىٰ" },
-    { num: 16, arabic: "نَزَّاعَةً لِلشَّوَىٰ" },
-    { num: 17, arabic: "تَدْعُو مَنْ أَدْبَرَ وَتَوَلَّىٰ" },
-    { num: 18, arabic: "وَجَمَعَ فَأَوْعَىٰ" },
-    { num: 19, arabic: "إِنَّ الْإِنْسَانَ خُلِقَ هَلُوعًا" },
-    { num: 20, arabic: "إِذَا مَسَّهُ الشَّرُّ جَزُوعًا" }
+    { num: 80, arabic: "اسْتَغْفِرْ لَهُمْ أَوْ لَا تَسْتَغْفِرْ لَهُمْ إِنْ تَسْتَغْفِرْ لَهُمْ سَبْعِينَ مَرَّةً فَلَنْ يَغْفِرَ اللَّهُ لَهُمْ ۚ ذَٰلِكَ بِأَنَّهُمْ كَفَرُوا بِاللَّهِ وَرَسُولِهِ ۗ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ" },
+    { num: 81, arabic: "فَرِحَ الْمُخَلَّفُونَ بِمَقْعَدِهِمْ خِلَافَ رَسُولِ اللَّهِ وَكَرِهُوا أَنْ يُجَاهِدُوا بِأَمْوَالِهِمْ وَأَنْفُسِهِمْ فِي سَبِيلِ اللَّهِ وَقَالُوا لَا تَنْفِرُوا فِي الْحَرِّ ۗ قُلْ نَارُ جَهَنَّمَ أَشَدُّ حَرًّا ۚ لَوْ كَانُوا يَفْقَهُونَ" },
+    { num: 82, arabic: "فَلْيَضْحَكُوا قَلِيلًا وَلْيَبْكُوا كَثِيرًا جَزَاءً بِمَا كَانُوا يَكْسِبُونَ" },
+    { num: 83, arabic: "فَإِنْ رَجَعَكَ اللَّهُ إِلَىٰ طَائِفَةٍ مِنْهُمْ فَاسْتَأْذَنُوكَ لِلْخُرُوجِ فَقُلْ لَنْ تَخْرُجُوا مَعِيَ أَبَدًا وَلَنْ تُقَاتِلُوا مَعِيَ عَدُوًّا ۖ إِنَّكُمْ رَضِيتُمْ بِالْقُعُودِ أَوَّلَ مَرَّةٍ فَاقْعُدُوا مَعَ الْخَالِفِينَ" },
+    { num: 84, arabic: "وَلَا تُصَلِّ عَلَىٰ أَحَدٍ مِنْهُمْ مَاتَ أَبَدًا وَلَا تَقُمْ عَلَىٰ قَبْرِهِ ۖ إِنَّهُمْ كَفَرُوا بِاللَّهِ وَرَسُولِهِ وَمَاتُوا وَهُمْ فَاسِقُونَ" },
+    { num: 85, arabic: "وَلَا تُعْجِبْكَ أَمْوَالُهُمْ وَأَوْلَادُهُمْ ۚ إِنَّمَا يُرِيدُ اللَّهُ أَنْ يُعَذِّبَهُمْ بِهَا فِي الدُّنْيَا وَتَزْهَقَ أَنْفُسُهُمْ وَهُمْ كَافِرُونَ" },
+    { num: 86, arabic: "وَإِذَا أُنْزِلَتْ سُورَةٌ أَنْ آمِنُوا بِاللَّهِ وَجَاهِدُوا مَعَ رَسُولِهِ اسْتَأْذَنَكَ أُولُو الطَّوْلِ مِنْهُمْ وَقَالُوا ذَرْنَا نَكُنْ مَعَ الْقَاعِدِينَ" }
   ];
 
   function getAyahUrl(verseNumber) {
-    const surahCode = "070";
+    const surahCode = "009";
     const versePadded = String(verseNumber).padStart(3, '0');
     return `https://everyayah.com/data/Alafasy_128kbps/${surahCode}${versePadded}.mp3`;
   }
@@ -359,11 +355,11 @@
         if (autoContinue) {
           audioElem.onended = () => {
             if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 550);
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١٠–٢٠) من سورة المعارج 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٨٠–٨٦) من سورة التوبة 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -420,10 +416,10 @@
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
           if (currentIdx + 1 < versesData.length) {
-            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 550);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (المعارج ١٠–٢٠) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (التوبة ٨٠–٨٦) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -435,7 +431,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات المعارج ١٠–٢٠';
+    statusLabel.innerHTML = '🎙️ استمع لآيات التوبة ٨٠–٨٦';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
