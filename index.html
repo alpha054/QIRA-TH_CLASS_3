@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة المزمل | الآية 20 (آخر آية) - للأطفال</title>
+<title>سورة المدثر | الآيات 1-18 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -224,38 +224,55 @@
 <div class="container">
   <div class="surah-header">
     <div class="surah-title">
-      <span class="title-arabic">سُورَةُ الْمُزَّمِّلِ</span>
-      <span class="title-secondary">(المزمل)</span>
+      <span class="title-arabic">سُورَةُ الْمُدَّثِّرِ</span>
+      <span class="title-secondary">(المدثر)</span>
     </div>
-    <div class="verse-range">الآية ٢٠ (آخر آية)</div>
+    <div class="verse-range">الآيات ١ – ١٨</div>
   </div>
 
   <div class="surah-note">
-    ﴿ إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِنْ ثُلُثَيِ اللَّيْلِ ﴾
+    ﴿ يَا أَيُّهَا الْمُدَّثِّرُ ﴾
   </div>
 
   <div class="audio-section">
     <button class="play-button" id="playToggleBtn" aria-label="play/pause">▶︎</button>
     <div class="audio-status">
-      <div class="status-text" id="audioStatusLabel">استمع إلى الآية</div>
+      <div class="status-text" id="audioStatusLabel">استمع إلى الآيات</div>
       <div class="progress-bar-bg"><div class="progress-fill" id="audioProgressFill"></div></div>
     </div>
   </div>
 
   <div class="verses-list" id="versesList"></div>
-  <div class="footer-note">✨ اضغط على الآية للانتقال إليها · تلاوة واضحة للأطفال</div>
+  <div class="footer-note">✨ اضغط على أي آية للانتقال إليها · تلاوة واضحة للأطفال · انتقال تلقائي بين الآيات</div>
 </div>
 
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-MUZZAMMIL (73) VERSE 20 (LAST VERSE) ======================
+  // ====================== SURAH AL-MUDDATHTHIR (74) VERSES 1 – 18 ======================
   const versesData = [
-    { num: 20, arabic: "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِنْ ثُلُثَيِ اللَّيْلِ وَنِصْفَهُ وَثُلُثَهُ وَطَائِفَةٌ مِنَ الَّذِينَ مَعَكَ ۚ وَاللَّهُ يُقَدِّرُ اللَّيْلَ وَالنَّهَارَ ۚ عَلِمَ أَنْ لَنْ تُحْصُوهُ فَتَابَ عَلَيْكُمْ ۖ فَاقْرَءُوا مَا تَيَسَّرَ مِنَ الْقُرْآنِ ۚ عَلِمَ أَنْ سَيَكُونُ مِنْكُمْ مَرْضَىٰ ۙ وَآخَرُونَ يَضْرِبُونَ فِي الْأَرْضِ يَبْتَغُونَ مِنْ فَضْلِ اللَّهِ ۙ وَآخَرُونَ يُقَاتِلُونَ فِي سَبِيلِ اللَّهِ ۖ فَاقْرَءُوا مَا تَيَسَّرَ مِنْهُ ۚ وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَأَقْرِضُوا اللَّهَ قَرْضًا حَسَنًا ۚ وَمَا تُقَدِّمُوا لِأَنْفُسِكُمْ مِنْ خَيْرٍ تَجِدُوهُ عِنْدَ اللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا ۚ وَاسْتَغْفِرُوا اللَّهَ ۖ إِنَّ اللَّهَ غَفُورٌ رَحِيمٌ" }
+    { num: 1, arabic: "يَا أَيُّهَا الْمُدَّثِّرُ" },
+    { num: 2, arabic: "قُمْ فَأَنْذِرْ" },
+    { num: 3, arabic: "وَرَبَّكَ فَكَبِّرْ" },
+    { num: 4, arabic: "وَثِيَابَكَ فَطَهِّرْ" },
+    { num: 5, arabic: "وَالرُّجْزَ فَاهْجُرْ" },
+    { num: 6, arabic: "وَلَا تَمْنُنْ تَسْتَكْثِرُ" },
+    { num: 7, arabic: "وَلِرَبِّكَ فَاصْبِرْ" },
+    { num: 8, arabic: "فَإِذَا نُقِرَ فِي النَّاقُورِ" },
+    { num: 9, arabic: "فَذَٰلِكَ يَوْمَئِذٍ يَوْمٌ عَسِيرٌ" },
+    { num: 10, arabic: "عَلَى الْكَافِرِينَ غَيْرُ يَسِيرٍ" },
+    { num: 11, arabic: "ذَرْنِي وَمَنْ خَلَقْتُ وَحِيدًا" },
+    { num: 12, arabic: "وَجَعَلْتُ لَهُ مَالًا مَمْدُودًا" },
+    { num: 13, arabic: "وَبَنِينَ شُهُودًا" },
+    { num: 14, arabic: "وَمَهَّدْتُ لَهُ تَمْهِيدًا" },
+    { num: 15, arabic: "ثُمَّ يَطْمَعُ أَنْ أَزِيدَ" },
+    { num: 16, arabic: "كَلَّا ۖ إِنَّهُ كَانَ لِآيَاتِنَا عَنِيدًا" },
+    { num: 17, arabic: "سَأُرْهِقُهُ صَعُودًا" },
+    { num: 18, arabic: "إِنَّهُ فَكَّرَ وَقَدَّرَ" }
   ];
 
   function getAyahUrl(verseNumber) {
-    const surahCode = "073";
+    const surahCode = "074";
     const versePadded = String(verseNumber).padStart(3, '0');
     return `https://everyayah.com/data/Alafasy_128kbps/${surahCode}${versePadded}.mp3`;
   }
@@ -297,8 +314,8 @@
       if (i === index) card.classList.add('active');
       else card.classList.remove('active');
     });
-    // Since there is only one verse, progress is always 100% after loading
-    progressFillBar.style.width = '100%';
+    const progressPercent = ((index + 1) / versesData.length) * 100;
+    progressFillBar.style.width = `${progressPercent}%`;
     
     if (smoothScroll) {
       const activeCard = document.querySelector(`.verse-item[data-index='${index}']`);
@@ -347,13 +364,16 @@
         updateUIStatus(currentIdx, true);
         if (autoContinue) {
           audioElem.onended = () => {
-            // Only one verse, so just mark as finished
-            isPlaying = false;
-            playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✅ تمت تلاوة الآية ٢٠ من سورة المزمل 🌟';
-            progressFillBar.style.width = '100%';
-            audioElem.onended = null;
-            clearNextTimeout();
+            if (currentIdx + 1 < versesData.length) {
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
+            } else {
+              isPlaying = false;
+              playBtn.innerHTML = '▶︎';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١–١٨) من سورة المدثر 🌟';
+              progressFillBar.style.width = '100%';
+              audioElem.onended = null;
+              clearNextTimeout();
+            }
           };
         }
       }).catch(err => {
@@ -405,9 +425,13 @@
         playBtn.innerHTML = '⏸︎';
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
-          isPlaying = false; playBtn.innerHTML = '▶︎';
-          statusLabel.innerHTML = '✨ أتممت الآية ٢٠ من سورة المزمل ✨';
-          progressFillBar.style.width = '100%';
+          if (currentIdx + 1 < versesData.length) {
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
+          } else {
+            isPlaying = false; playBtn.innerHTML = '▶︎';
+            statusLabel.innerHTML = '✨ أتممت الآيات (المدثر ١–١٨) ✨';
+            progressFillBar.style.width = '100%';
+          }
         };
       }).catch(() => { statusLabel.innerHTML = '⚠️ يلزم تفاعل'; });
     }
@@ -417,7 +441,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآية المزمل ٢٠';
+    statusLabel.innerHTML = '🎙️ استمع لآيات المدثر ١–١٨';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
