@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة المدثر | الآية 31 - للأطفال</title>
+<title>سورة المدثر | الآيات 32-47 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,31 +227,46 @@
       <span class="title-arabic">سُورَةُ الْمُدَّثِّرِ</span>
       <span class="title-secondary">(المدثر)</span>
     </div>
-    <div class="verse-range">الآية ٣١</div>
+    <div class="verse-range">الآيات ٣٢ – ٤٧</div>
   </div>
 
   <div class="surah-note">
-    ﴿ وَمَا جَعَلْنَا أَصْحَابَ النَّارِ إِلَّا مَلَائِكَةً ﴾
+    ﴿ كَلَّا وَالْقَمَرِ ﴾
   </div>
 
   <div class="audio-section">
     <button class="play-button" id="playToggleBtn" aria-label="play/pause">▶︎</button>
     <div class="audio-status">
-      <div class="status-text" id="audioStatusLabel">استمع إلى الآية</div>
+      <div class="status-text" id="audioStatusLabel">استمع إلى الآيات</div>
       <div class="progress-bar-bg"><div class="progress-fill" id="audioProgressFill"></div></div>
     </div>
   </div>
 
   <div class="verses-list" id="versesList"></div>
-  <div class="footer-note">✨ اضغط على الآية للانتقال إليها · تلاوة واضحة للأطفال</div>
+  <div class="footer-note">✨ اضغط على أي آية للانتقال إليها · تلاوة واضحة للأطفال · انتقال تلقائي بين الآيات</div>
 </div>
 
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-MUDDATHIR (74) VERSE 31 ======================
+  // ====================== SURAH AL-MUDDATHIR (74) VERSES 32 – 47 ======================
   const versesData = [
-    { num: 31, arabic: "وَمَا جَعَلْنَا أَصْحَابَ النَّارِ إِلَّا مَلَائِكَةً ۙ وَمَا جَعَلْنَا عِدَّتَهُمْ إِلَّا فِتْنَةً لِلَّذِينَ كَفَرُوا لِيَسْتَيْقِنَ الَّذِينَ أُوتُوا الْكِتَابَ وَيَزْدَادَ الَّذِينَ آمَنُوا إِيمَانًا ۙ وَلَا يَرْتَابَ الَّذِينَ أُوتُوا الْكِتَابَ وَالْمُؤْمِنُونَ ۙ وَلِيَقُولَ الَّذِينَ فِي قُلُوبِهِمْ مَرَضٌ وَالْكَافِرُونَ مَاذَا أَرَادَ اللَّهُ بِهَٰذَا مَثَلًا ۚ كَذَٰلِكَ يُضِلُّ اللَّهُ مَنْ يَشَاءُ وَيَهْدِي مَنْ يَشَاءُ ۚ وَمَا يَعْلَمُ جُنُودَ رَبِّكَ إِلَّا هُوَ ۚ وَمَا هِيَ إِلَّا ذِكْرَىٰ لِلْبَشَرِ" }
+    { num: 32, arabic: "كَلَّا وَالْقَمَرِ" },
+    { num: 33, arabic: "وَاللَّيْلِ إِذْ أَدْبَرَ" },
+    { num: 34, arabic: "وَالصُّبْحِ إِذَا أَسْفَرَ" },
+    { num: 35, arabic: "إِنَّهَا لَإِحْدَى الْكُبَرِ" },
+    { num: 36, arabic: "نَذِيرًا لِلْبَشَرِ" },
+    { num: 37, arabic: "لِمَنْ شَاءَ مِنْكُمْ أَنْ يَتَقَدَّمَ أَوْ يَتَأَخَّرَ" },
+    { num: 38, arabic: "كُلُّ نَفْسٍ بِمَا كَسَبَتْ رَهِينَةٌ" },
+    { num: 39, arabic: "إِلَّا أَصْحَابَ الْيَمِينِ" },
+    { num: 40, arabic: "فِي جَنَّاتٍ يَتَسَاءَلُونَ" },
+    { num: 41, arabic: "عَنِ الْمُجْرِمِينَ" },
+    { num: 42, arabic: "مَا سَلَكَكُمْ فِي سَقَرَ" },
+    { num: 43, arabic: "قَالُوا لَمْ نَكُ مِنَ الْمُصَلِّينَ" },
+    { num: 44, arabic: "وَلَمْ نَكُ نُطْعِمُ الْمِسْكِينَ" },
+    { num: 45, arabic: "وَكُنَّا نَخُوضُ مَعَ الْخَائِضِينَ" },
+    { num: 46, arabic: "وَكُنَّا نُكَذِّبُ بِيَوْمِ الدِّينِ" },
+    { num: 47, arabic: "حَتَّىٰ أَتَانَا الْيَقِينُ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -297,8 +312,8 @@
       if (i === index) card.classList.add('active');
       else card.classList.remove('active');
     });
-    // Since there is only one verse, progress is always 100% after loading
-    progressFillBar.style.width = '100%';
+    const progressPercent = ((index + 1) / versesData.length) * 100;
+    progressFillBar.style.width = `${progressPercent}%`;
     
     if (smoothScroll) {
       const activeCard = document.querySelector(`.verse-item[data-index='${index}']`);
@@ -347,13 +362,16 @@
         updateUIStatus(currentIdx, true);
         if (autoContinue) {
           audioElem.onended = () => {
-            // Only one verse, so just mark as finished
-            isPlaying = false;
-            playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✅ تمت تلاوة الآية ٣١ من سورة المدثر 🌟';
-            progressFillBar.style.width = '100%';
-            audioElem.onended = null;
-            clearNextTimeout();
+            if (currentIdx + 1 < versesData.length) {
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+            } else {
+              isPlaying = false;
+              playBtn.innerHTML = '▶︎';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٣٢–٤٧) من سورة المدثر 🌟';
+              progressFillBar.style.width = '100%';
+              audioElem.onended = null;
+              clearNextTimeout();
+            }
           };
         }
       }).catch(err => {
@@ -405,9 +423,13 @@
         playBtn.innerHTML = '⏸︎';
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
-          isPlaying = false; playBtn.innerHTML = '▶︎';
-          statusLabel.innerHTML = '✨ أتممت الآية ٣١ من سورة المدثر ✨';
-          progressFillBar.style.width = '100%';
+          if (currentIdx + 1 < versesData.length) {
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+          } else {
+            isPlaying = false; playBtn.innerHTML = '▶︎';
+            statusLabel.innerHTML = '✨ أتممت الآيات (المدثر ٣٢–٤٧) ✨';
+            progressFillBar.style.width = '100%';
+          }
         };
       }).catch(() => { statusLabel.innerHTML = '⚠️ يلزم تفاعل'; });
     }
@@ -417,7 +439,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآية المدثر ٣١';
+    statusLabel.innerHTML = '🎙️ استمع لآيات المدثر ٣٢–٤٧';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
