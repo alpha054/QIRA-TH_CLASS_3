@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة المدثر | الآيات 32-47 - للأطفال</title>
+<title>سورة المدثر | الآيات 48-56 (ختام السورة) - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,11 +227,11 @@
       <span class="title-arabic">سُورَةُ الْمُدَّثِّرِ</span>
       <span class="title-secondary">(المدثر)</span>
     </div>
-    <div class="verse-range">الآيات ٣٢ – ٤٧</div>
+    <div class="verse-range">الآيات ٤٨ – ٥٦ (ختام السورة)</div>
   </div>
 
   <div class="surah-note">
-    ﴿ كَلَّا وَالْقَمَرِ ﴾
+    ﴿ فَمَا تَنْفَعُهُمْ شَفَاعَةُ الشَّافِعِينَ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,24 +249,17 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-MUDDATHIR (74) VERSES 32 – 47 ======================
+  // ====================== SURAH AL-MUDDATHIR (74) VERSES 48 – 56 (END) ======================
   const versesData = [
-    { num: 32, arabic: "كَلَّا وَالْقَمَرِ" },
-    { num: 33, arabic: "وَاللَّيْلِ إِذْ أَدْبَرَ" },
-    { num: 34, arabic: "وَالصُّبْحِ إِذَا أَسْفَرَ" },
-    { num: 35, arabic: "إِنَّهَا لَإِحْدَى الْكُبَرِ" },
-    { num: 36, arabic: "نَذِيرًا لِلْبَشَرِ" },
-    { num: 37, arabic: "لِمَنْ شَاءَ مِنْكُمْ أَنْ يَتَقَدَّمَ أَوْ يَتَأَخَّرَ" },
-    { num: 38, arabic: "كُلُّ نَفْسٍ بِمَا كَسَبَتْ رَهِينَةٌ" },
-    { num: 39, arabic: "إِلَّا أَصْحَابَ الْيَمِينِ" },
-    { num: 40, arabic: "فِي جَنَّاتٍ يَتَسَاءَلُونَ" },
-    { num: 41, arabic: "عَنِ الْمُجْرِمِينَ" },
-    { num: 42, arabic: "مَا سَلَكَكُمْ فِي سَقَرَ" },
-    { num: 43, arabic: "قَالُوا لَمْ نَكُ مِنَ الْمُصَلِّينَ" },
-    { num: 44, arabic: "وَلَمْ نَكُ نُطْعِمُ الْمِسْكِينَ" },
-    { num: 45, arabic: "وَكُنَّا نَخُوضُ مَعَ الْخَائِضِينَ" },
-    { num: 46, arabic: "وَكُنَّا نُكَذِّبُ بِيَوْمِ الدِّينِ" },
-    { num: 47, arabic: "حَتَّىٰ أَتَانَا الْيَقِينُ" }
+    { num: 48, arabic: "فَمَا تَنْفَعُهُمْ شَفَاعَةُ الشَّافِعِينَ" },
+    { num: 49, arabic: "فَمَا لَهُمْ عَنِ التَّذْكِرَةِ مُعْرِضِينَ" },
+    { num: 50, arabic: "كَأَنَّهُمْ حُمُرٌ مُسْتَنْفِرَةٌ" },
+    { num: 51, arabic: "فَرَّتْ مِنْ قَسْوَرَةٍ" },
+    { num: 52, arabic: "بَلْ يُرِيدُ كُلُّ امْرِئٍ مِنْهُمْ أَنْ يُؤْتَىٰ صُحُفًا مُنَشَّرَةً" },
+    { num: 53, arabic: "كَلَّا ۖ بَلْ لَا يَخَافُونَ الْآخِرَةَ" },
+    { num: 54, arabic: "كَلَّا إِنَّهُ تَذْكِرَةٌ" },
+    { num: 55, arabic: "فَمَنْ شَاءَ ذَكَرَهُ" },
+    { num: 56, arabic: "وَمَا يَذْكُرُونَ إِلَّا أَنْ يَشَاءَ اللَّهُ ۚ هُوَ أَهْلُ التَّقْوَىٰ وَأَهْلُ الْمَغْفِرَةِ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -363,11 +356,11 @@
         if (autoContinue) {
           audioElem.onended = () => {
             if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٣٢–٤٧) من سورة المدثر 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة خاتمة سورة المدثر (٤٨–٥٦) 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -424,10 +417,10 @@
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
           if (currentIdx + 1 < versesData.length) {
-            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (المدثر ٣٢–٤٧) ✨';
+            statusLabel.innerHTML = '✨ أتممت خاتمة سورة المدثر (٤٨–٥٦) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -439,7 +432,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات المدثر ٣٢–٤٧';
+    statusLabel.innerHTML = '🎙️ استمع لخاتمة المدثر ٤٨–٥٦';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
