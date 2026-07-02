@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة القيامة | الآيات 11-19 - للأطفال</title>
+<title>سورة القيامة | الآيات 20-30 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,11 +227,11 @@
       <span class="title-arabic">سُورَةُ الْقِيَامَةِ</span>
       <span class="title-secondary">(القيامة)</span>
     </div>
-    <div class="verse-range">الآيات ١١ – ١٩</div>
+    <div class="verse-range">الآيات ٢٠ – ٣٠</div>
   </div>
 
   <div class="surah-note">
-    ﴿ كَلَّا لَا وَزَرَ ﴾
+    ﴿ كَلَّا بَلْ تُحِبُّونَ الْعَاجِلَةَ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,17 +249,19 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-QIYAMAH (75) VERSES 11 – 19 ======================
+  // ====================== SURAH AL-QIYAMAH (75) VERSES 20 – 30 ======================
   const versesData = [
-    { num: 11, arabic: "كَلَّا لَا وَزَرَ" },
-    { num: 12, arabic: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ الْمُسْتَقَرُّ" },
-    { num: 13, arabic: "يُنَبَّأُ الْإِنْسَانُ يَوْمَئِذٍ بِمَا قَدَّمَ وَأَخَّرَ" },
-    { num: 14, arabic: "بَلِ الْإِنْسَانُ عَلَىٰ نَفْسِهِ بَصِيرَةٌ" },
-    { num: 15, arabic: "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُ" },
-    { num: 16, arabic: "لَا تُحَرِّكْ بِهِ لِسَانَكَ لِتَعْجَلَ بِهِ" },
-    { num: 17, arabic: "إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ" },
-    { num: 18, arabic: "فَإِذَا قَرَأْنَاهُ فَاتَّبِعْ قُرْآنَهُ" },
-    { num: 19, arabic: "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُ" }
+    { num: 20, arabic: "كَلَّا بَلْ تُحِبُّونَ الْعَاجِلَةَ" },
+    { num: 21, arabic: "وَتَذَرُونَ الْآخِرَةَ" },
+    { num: 22, arabic: "وُجُوهٌ يَوْمَئِذٍ نَاضِرَةٌ" },
+    { num: 23, arabic: "إِلَىٰ رَبِّهَا نَاظِرَةٌ" },
+    { num: 24, arabic: "وَوُجُوهٌ يَوْمَئِذٍ بَاسِرَةٌ" },
+    { num: 25, arabic: "تَظُنُّ أَنْ يُفْعَلَ بِهَا فَاقِرَةٌ" },
+    { num: 26, arabic: "كَلَّا إِذَا بَلَغَتِ التَّرَاقِيَ" },
+    { num: 27, arabic: "وَقِيلَ مَنْ ۜ رَاقٍ" },
+    { num: 28, arabic: "وَظَنَّ أَنَّهُ الْفِرَاقُ" },
+    { num: 29, arabic: "وَالْتَفَّتِ السَّاقُ بِالسَّاقِ" },
+    { num: 30, arabic: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ الْمَسَاقُ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -360,7 +362,7 @@
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١١–١٩) من سورة القيامة 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٢٠–٣٠) من سورة القيامة 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -420,7 +422,7 @@
             autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (القيامة ١١–١٩) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (القيامة ٢٠–٣٠) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -432,7 +434,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات القيامة ١١–١٩';
+    statusLabel.innerHTML = '🎙️ استمع لآيات القيامة ٢٠–٣٠';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
