@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة القيامة | الآيات 31-40 (ختام السورة) - للأطفال</title>
+<title>سورة الإنسان | الآيات 10-20 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -14,7 +13,7 @@
   }
 
   body {
-    background: linear-gradient(145deg, #f0f0ed 0%, #e2dfd6 100%);
+    background: linear-gradient(145deg, #f0f4f0 0%, #e2e8da 100%);
     font-family: 'Scheherazade New', 'Cairo', serif;
     min-height: 100vh;
     direction: rtl;
@@ -35,13 +34,13 @@
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #d0d0c0;
+    border: 1px solid #c8dbc0;
   }
 
   .surah-title {
     font-size: clamp(1.8rem, 6vw, 2.6rem);
     font-weight: 800;
-    color: #5a4a3a;
+    color: #2c6e2c;
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
@@ -54,23 +53,23 @@
   }
   .title-secondary {
     font-size: 0.85rem;
-    background: #e4e0d4;
+    background: #e2ecd9;
     padding: 3px 14px;
     border-radius: 100px;
     font-family: 'Cairo', sans-serif;
-    color: #5a4a3a;
+    color: #2c6e2c;
   }
 
   .verse-range {
     font-family: 'Cairo', sans-serif;
     font-size: 0.9rem;
-    background: #dcd8ca;
+    background: #d9e8d0;
     display: inline-block;
     padding: 4px 22px;
     border-radius: 40px;
     margin-top: 8px;
     font-weight: 600;
-    color: #4a3e2e;
+    color: #2a5a2a;
   }
 
   .surah-note {
@@ -80,9 +79,9 @@
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #6a5a4a;
+    color: #4a7a2e;
     margin-bottom: 24px;
-    border-right: 4px solid #b0977a;
+    border-right: 4px solid #5a9e3e;
     font-family: 'Cairo', sans-serif;
   }
 
@@ -97,11 +96,11 @@
     flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    border: 1px solid #d0c8b8;
+    border: 1px solid #c8dbbc;
   }
 
   .play-button {
-    background: #5a4a3a;
+    background: #2c6e2c;
     width: 54px;
     height: 54px;
     border-radius: 50%;
@@ -110,13 +109,13 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 6px 12px rgba(90, 74, 58, 0.25);
+    box-shadow: 0 6px 12px rgba(44, 110, 44, 0.25);
     border: none;
     font-size: 1.6rem;
     color: white;
   }
   .play-button:hover {
-    background: #3f3428;
+    background: #1e551e;
     transform: scale(1.02);
   }
   .play-button:active {
@@ -131,10 +130,10 @@
     font-family: 'Cairo', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #6a5a4a;
+    color: #4a7a2e;
   }
   .progress-bar-bg {
-    background: #e0dcd0;
+    background: #e0e8d8;
     height: 5px;
     border-radius: 8px;
     margin-top: 6px;
@@ -142,7 +141,7 @@
     overflow: hidden;
   }
   .progress-fill {
-    background: #b0977a;
+    background: #5a9e3e;
     width: 0%;
     height: 100%;
     border-radius: 8px;
@@ -160,14 +159,14 @@
     border-radius: 28px;
     padding: 18px 22px;
     transition: all 0.2s ease;
-    border: 1px solid #d4d0c0;
+    border: 1px solid #d4e0ca;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.02);
   }
   .verse-item.active {
-    background: #f8f4ea;
-    border-right: 6px solid #b0977a;
-    box-shadow: 0 10px 20px -10px rgba(80, 60, 40, 0.12);
+    background: #f6ffed;
+    border-right: 6px solid #5a9e3e;
+    box-shadow: 0 10px 20px -10px rgba(60, 100, 30, 0.12);
     transform: translateY(-1px);
   }
 
@@ -176,13 +175,13 @@
     align-items: baseline;
     gap: 14px;
     margin-bottom: 8px;
-    border-bottom: 1px dashed #d4d0c0;
+    border-bottom: 1px dashed #d4e0ca;
     padding-bottom: 6px;
   }
   .verse-num {
     font-family: 'Cairo', monospace;
     font-weight: 800;
-    background: #f0ede2;
+    background: #eff5e8;
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -190,8 +189,8 @@
     justify-content: center;
     border-radius: 40px;
     font-size: 1rem;
-    color: #5a4a3a;
-    border: 1px solid #c8c0b0;
+    color: #2c6e2c;
+    border: 1px solid #c0d8b0;
     flex-shrink: 0;
   }
   .arabic-text {
@@ -209,8 +208,8 @@
     margin-top: 34px;
     font-family: 'Cairo', sans-serif;
     font-size: 0.75rem;
-    color: #9a8a78;
-    border-top: 1px solid #d4d0c0;
+    color: #8ba87a;
+    border-top: 1px solid #d4e0ca;
     padding-top: 20px;
   }
 
@@ -225,14 +224,14 @@
 <div class="container">
   <div class="surah-header">
     <div class="surah-title">
-      <span class="title-arabic">سُورَةُ الْقِيَامَةِ</span>
-      <span class="title-secondary">(القيامة)</span>
+      <span class="title-arabic">سُورَةُ الْإِنْسَانِ</span>
+      <span class="title-secondary">(الدَّهْرِ)</span>
     </div>
-    <div class="verse-range">الآيات ٣١ – ٤٠ (ختام السورة)</div>
+    <div class="verse-range">الآيات ١٠ – ٢٠</div>
   </div>
 
   <div class="surah-note">
-    ﴿ أَلَيْسَ ذَٰلِكَ بِقَادِرٍ عَلَىٰ أَنْ يُحْيِيَ الْمَوْتَىٰ ﴾
+    ﴿ إِنَّا نَخَافُ مِنْ رَبِّنَا يَوْمًا عَبُوسًا قَمْطَرِيرًا ﴾
   </div>
 
   <div class="audio-section">
@@ -250,22 +249,23 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-QIYAMAH (75) VERSES 31 – 40 (END) ======================
+  // ====================== SURAH AL-INSAN (76) VERSES 10 – 20 ======================
   const versesData = [
-    { num: 31, arabic: "فَلَا صَدَّقَ وَلَا صَلَّىٰ" },
-    { num: 32, arabic: "وَلَٰكِنْ كَذَّبَ وَتَوَلَّىٰ" },
-    { num: 33, arabic: "ثُمَّ ذَهَبَ إِلَىٰ أَهْلِهِ يَتَمَطَّىٰ" },
-    { num: 34, arabic: "أَوْلَىٰ لَكَ فَأَوْلَىٰ" },
-    { num: 35, arabic: "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰ" },
-    { num: 36, arabic: "أَيَحْسَبُ الْإِنْسَانُ أَنْ يُتْرَكَ سُدًى" },
-    { num: 37, arabic: "أَلَمْ يَكُ نُطْفَةً مِنْ مَنِيٍّ يُمْنَىٰ" },
-    { num: 38, arabic: "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ" },
-    { num: 39, arabic: "فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنْثَىٰ" },
-    { num: 40, arabic: "أَلَيْسَ ذَٰلِكَ بِقَادِرٍ عَلَىٰ أَنْ يُحْيِيَ الْمَوْتَىٰ" }
+    { num: 10, arabic: "إِنَّا نَخَافُ مِنْ رَبِّنَا يَوْمًا عَبُوسًا قَمْطَرِيرًا" },
+    { num: 11, arabic: "فَوَقَاهُمُ اللَّهُ شَرَّ ذَٰلِكَ الْيَوْمِ وَلَقَّاهُمْ نَضْرَةً وَسُرُورًا" },
+    { num: 12, arabic: "وَجَزَاهُمْ بِمَا صَبَرُوا جَنَّةً وَحَرِيرًا" },
+    { num: 13, arabic: "مُتَّكِئِينَ فِيهَا عَلَى الْأَرَائِكِ ۖ لَا يَرَوْنَ فِيهَا شَمْسًا وَلَا زَمْهَرِيرًا" },
+    { num: 14, arabic: "وَدَانِيَةً عَلَيْهِمْ ظِلَالُهَا وَذُلِّلَتْ قُطُوفُهَا تَذْلِيلًا" },
+    { num: 15, arabic: "وَيُطَافُ عَلَيْهِمْ بِآنِيَةٍ مِنْ فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا" },
+    { num: 16, arabic: "قَوَارِيرَ مِنْ فِضَّةٍ قَدَّرُوهَا تَقْدِيرًا" },
+    { num: 17, arabic: "وَيُسْقَوْنَ فِيهَا كَأْسًا كَانَ مِزَاجُهَا زَنْجَبِيلًا" },
+    { num: 18, arabic: "عَيْنًا فِيهَا تُسَمَّىٰ سَلْسَبِيلًا" },
+    { num: 19, arabic: "وَيَطُوفُ عَلَيْهِمْ وِلْدَانٌ مُخَلَّدُونَ إِذَا رَأَيْتَهُمْ حَسِبْتَهُمْ لُؤْلُؤًا مَنْثُورًا" },
+    { num: 20, arabic: "وَإِذَا رَأَيْتَ ثَمَّ رَأَيْتَ نَعِيمًا وَمُلْكًا كَبِيرًا" }
   ];
 
   function getAyahUrl(verseNumber) {
-    const surahCode = "075";
+    const surahCode = "076";
     const versePadded = String(verseNumber).padStart(3, '0');
     return `https://everyayah.com/data/Alafasy_128kbps/${surahCode}${versePadded}.mp3`;
   }
@@ -358,11 +358,11 @@
         if (autoContinue) {
           audioElem.onended = () => {
             if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 560);
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة خاتمة سورة القيامة (٣١–٤٠) 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١٠–٢٠) من سورة الإنسان 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -419,10 +419,10 @@
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
           if (currentIdx + 1 < versesData.length) {
-            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 560);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت خاتمة سورة القيامة (٣١–٤٠) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (الإنسان ١٠–٢٠) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -434,7 +434,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لخاتمة القيامة ٣١–٤٠';
+    statusLabel.innerHTML = '🎙️ استمع لآيات الإنسان ١٠–٢٠';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
