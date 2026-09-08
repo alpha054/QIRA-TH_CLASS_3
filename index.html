@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة الطور | الآيات 1-14 - للأطفال</title>
+<title>سورة الطور | الآيات 15-21 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,11 +227,11 @@
       <span class="title-arabic">سُورَةُ الطُّورِ</span>
       <span class="title-secondary">(الطور)</span>
     </div>
-    <div class="verse-range">الآيات ١ – ١٤</div>
+    <div class="verse-range">الآيات ١٥ – ٢١</div>
   </div>
 
   <div class="surah-note">
-    ﴿ وَالطُّورِ ۝ وَكِتَابٍ مَسْطُورٍ ﴾
+    ﴿ أَفَسِحْرٌ هَٰذَا أَمْ أَنْتُمْ لَا تُبْصِرُونَ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,22 +249,15 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AT-TUR (52) VERSES 1 – 14 ======================
+  // ====================== SURAH AT-TUR (52) VERSES 15 – 21 ======================
   const versesData = [
-    { num: 1, arabic: "وَالطُّورِ" },
-    { num: 2, arabic: "وَكِتَابٍ مَسْطُورٍ" },
-    { num: 3, arabic: "فِي رَقٍّ مَنْشُورٍ" },
-    { num: 4, arabic: "وَالْبَيْتِ الْمَعْمُورِ" },
-    { num: 5, arabic: "وَالسَّقْفِ الْمَرْفُوعِ" },
-    { num: 6, arabic: "وَالْبَحْرِ الْمَسْجُورِ" },
-    { num: 7, arabic: "إِنَّ عَذَابَ رَبِّكَ لَوَاقِعٌ" },
-    { num: 8, arabic: "مَا لَهُ مِنْ دَافِعٍ" },
-    { num: 9, arabic: "يَوْمَ تَمُورُ السَّمَاءُ مَوْرًا" },
-    { num: 10, arabic: "وَتَسِيرُ الْجِبَالُ سَيْرًا" },
-    { num: 11, arabic: "فَوَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ" },
-    { num: 12, arabic: "الَّذِينَ هُمْ فِي خَوْضٍ يَلْعَبُونَ" },
-    { num: 13, arabic: "يَوْمَ يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا" },
-    { num: 14, arabic: "هَٰذِهِ النَّارُ الَّتِي كُنْتُمْ بِهَا تُكَذِّبُونَ" }
+    { num: 15, arabic: "أَفَسِحْرٌ هَٰذَا أَمْ أَنْتُمْ لَا تُبْصِرُونَ" },
+    { num: 16, arabic: "اصْلَوْهَا فَاصْبِرُوا أَوْ لَا تَصْبِرُوا سَوَاءٌ عَلَيْكُمْ ۖ إِنَّمَا تُجْزَوْنَ مَا كُنْتُمْ تَعْمَلُونَ" },
+    { num: 17, arabic: "إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَنَعِيمٍ" },
+    { num: 18, arabic: "فَاكِهِينَ بِمَا آتَاهُمْ رَبُّهُمْ وَوَقَاهُمْ رَبُّهُمْ عَذَابَ الْجَحِيمِ" },
+    { num: 19, arabic: "كُلُوا وَاشْرَبُوا هَنِيئًا بِمَا كُنْتُمْ تَعْمَلُونَ" },
+    { num: 20, arabic: "مُتَّكِئِينَ عَلَىٰ سُرُرٍ مَصْفُوفَةٍ ۖ وَزَوَّجْنَاهُمْ بِحُورٍ عِينٍ" },
+    { num: 21, arabic: "وَالَّذِينَ آمَنُوا وَاتَّبَعَتْهُمْ ذُرِّيَّتُهُمْ بِإِيمَانٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَا أَلَتْنَاهُمْ مِنْ عَمَلِهِمْ مِنْ شَيْءٍ ۚ كُلُّ امْرِئٍ بِمَا كَسَبَ رَهِينٌ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -361,11 +354,11 @@
         if (autoContinue) {
           audioElem.onended = () => {
             if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١–١٤) من سورة الطور 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١٥–٢١) من سورة الطور 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -422,10 +415,10 @@
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
           if (currentIdx + 1 < versesData.length) {
-            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 500);
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 520);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (الطور ١–١٤) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (الطور ١٥–٢١) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -437,7 +430,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات الطور ١–١٤';
+    statusLabel.innerHTML = '🎙️ استمع لآيات الطور ١٥–٢١';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
