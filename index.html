@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة الرحمن | الآيات 56-69 - للأطفال</title>
+<title>سورة الواقعة | الآيات 1-10 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -224,14 +224,14 @@
 <div class="container">
   <div class="surah-header">
     <div class="surah-title">
-      <span class="title-arabic">سُورَةُ الرَّحْمَٰنِ</span>
-      <span class="title-secondary">(عروس القرآن)</span>
+      <span class="title-arabic">سُورَةُ الْوَاقِعَةِ</span>
+      <span class="title-secondary">(الواقعة)</span>
     </div>
-    <div class="verse-range">الآيات ٥٦ – ٦٩</div>
+    <div class="verse-range">الآيات ١ – ١٠</div>
   </div>
 
   <div class="surah-note">
-    ﴿ فِيهِنَّ قَاصِرَاتُ الطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنْسٌ قَبْلَهُمْ وَلَا جَانٌّ ﴾
+    ﴿ إِذَا وَقَعَتِ الْوَاقِعَةُ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,26 +249,22 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AR-RAHMAN (55) VERSES 56 – 69 ======================
+  // ====================== SURAH AL-WAQI'AH (56) VERSES 1 – 10 ======================
   const versesData = [
-    { num: 56, arabic: "فِيهِنَّ قَاصِرَاتُ الطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنْسٌ قَبْلَهُمْ وَلَا جَانٌّ" },
-    { num: 57, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" },
-    { num: 58, arabic: "كَأَنَّهُنَّ الْيَاقُوتُ وَالْمَرْجَانُ" },
-    { num: 59, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" },
-    { num: 60, arabic: "هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ" },
-    { num: 61, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" },
-    { num: 62, arabic: "وَمِنْ دُونِهِمَا جَنَّتَانِ" },
-    { num: 63, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" },
-    { num: 64, arabic: "مُدْهَامَّتَانِ" },
-    { num: 65, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" },
-    { num: 66, arabic: "فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ" },
-    { num: 67, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" },
-    { num: 68, arabic: "فِيهِمَا فَاكِهَةٌ وَنَخْلٌ وَرُمَّانٌ" },
-    { num: 69, arabic: "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ" }
+    { num: 1, arabic: "إِذَا وَقَعَتِ الْوَاقِعَةُ" },
+    { num: 2, arabic: "لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ" },
+    { num: 3, arabic: "خَافِضَةٌ رَافِعَةٌ" },
+    { num: 4, arabic: "إِذَا رُجَّتِ الْأَرْضُ رَجًّا" },
+    { num: 5, arabic: "وَبُسَّتِ الْجِبَالُ بَسًّا" },
+    { num: 6, arabic: "فَكَانَتْ هَبَاءً مُنْبَثًّا" },
+    { num: 7, arabic: "وَكُنْتُمْ أَزْوَاجًا ثَلَاثَةً" },
+    { num: 8, arabic: "فَأَصْحَابُ الْمَيْمَنَةِ مَا أَصْحَابُ الْمَيْمَنَةِ" },
+    { num: 9, arabic: "وَأَصْحَابُ الْمَشْأَمَةِ مَا أَصْحَابُ الْمَشْأَمَةِ" },
+    { num: 10, arabic: "وَالسَّابِقُونَ السَّابِقُونَ" }
   ];
 
   function getAyahUrl(verseNumber) {
-    const surahCode = "055";
+    const surahCode = "056";
     const versePadded = String(verseNumber).padStart(3, '0');
     return `https://everyayah.com/data/Alafasy_128kbps/${surahCode}${versePadded}.mp3`;
   }
@@ -361,11 +357,11 @@
         if (autoContinue) {
           audioElem.onended = () => {
             if (currentIdx + 1 < versesData.length) {
-              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 540);
+              autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 560);
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٥٦–٦٩) من سورة الرحمن 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١–١٠) من سورة الواقعة 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -422,10 +418,10 @@
         updateUIStatus(currentIdx, true);
         audioElem.onended = () => {
           if (currentIdx + 1 < versesData.length) {
-            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 540);
+            autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 560);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (الرحمن ٥٦–٦٩) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (الواقعة ١–١٠) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -437,7 +433,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات الرحمن ٥٦–٦٩';
+    statusLabel.innerHTML = '🎙️ استمع لآيات الواقعة ١–١٠';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
