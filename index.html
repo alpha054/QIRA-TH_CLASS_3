@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة الواقعة | الآيات 64-70 - للأطفال</title>
+<title>سورة الواقعة | الآيات 51-60 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,11 +227,11 @@
       <span class="title-arabic">سُورَةُ الْوَاقِعَةِ</span>
       <span class="title-secondary">(الواقعة)</span>
     </div>
-    <div class="verse-range">الآيات ٦٤ – ٧٠</div>
+    <div class="verse-range">الآيات ٥١ – ٦٠</div>
   </div>
 
   <div class="surah-note">
-    ﴿ أَفَرَأَيْتُمْ مَا تَحْرُثُونَ ﴾
+    ﴿ ثُمَّ إِنَّكُمْ أَيُّهَا الضَّالُّونَ الْمُكَذِّبُونَ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,15 +249,18 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-WAQI'AH (56) VERSES 64 – 70 ======================
+  // ====================== SURAH AL-WAQI'AH (56) VERSES 51 – 60 ======================
   const versesData = [
-    { num: 64, arabic: "أَفَرَأَيْتُمْ مَا تَحْرُثُونَ" },
-    { num: 65, arabic: "أَأَنْتُمْ تَزْرَعُونَهُ أَمْ نَحْنُ الزَّارِعُونَ" },
-    { num: 66, arabic: "لَوْ نَشَاءُ لَجَعَلْنَاهُ حُطَامًا فَظَلْتُمْ تَفَكَّهُونَ" },
-    { num: 67, arabic: "إِنَّا لَمُغْرَمُونَ" },
-    { num: 68, arabic: "أَفَرَأَيْتُمُ الْمَاءَ الَّذِي تَشْرَبُونَ" },
-    { num: 69, arabic: "أَأَنْتُمْ أَنْزَلْتُمُوهُ مِنَ الْمُزْنِ أَمْ نَحْنُ الْمُنْزِلُونَ" },
-    { num: 70, arabic: "لَوْ نَشَاءُ جَعَلْنَاهُ أُجَاجًا فَلَوْلَا تَشْكُرُونَ" }
+    { num: 51, arabic: "ثُمَّ إِنَّكُمْ أَيُّهَا الضَّالُّونَ الْمُكَذِّبُونَ" },
+    { num: 52, arabic: "لَآكِلُونَ مِنْ شَجَرٍ مِنْ زَقُّومٍ" },
+    { num: 53, arabic: "فَمَالِئُونَ مِنْهَا الْبُطُونَ" },
+    { num: 54, arabic: "فَشَارِبُونَ عَلَيْهِ مِنَ الْحَمِيمِ" },
+    { num: 55, arabic: "فَشَارِبُونَ شُرْبَ الْهِيمِ" },
+    { num: 56, arabic: "هَٰذَا نُزُلُهُمْ يَوْمَ الدِّينِ" },
+    { num: 57, arabic: "نَحْنُ خَلَقْنَاكُمْ فَلَوْلَا تُصَدِّقُونَ" },
+    { num: 58, arabic: "أَفَرَأَيْتُمْ مَا تُمْنُونَ" },
+    { num: 59, arabic: "أَأَنْتُمْ تَخْلُقُونَهُ أَمْ نَحْنُ الْخَالِقُونَ" },
+    { num: 60, arabic: "نَحْنُ قَدَّرْنَا بَيْنَكُمُ الْمَوْتَ وَمَا نَحْنُ بِمَسْبُوقِينَ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -358,7 +361,7 @@
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٦٤–٧٠) من سورة الواقعة 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٥١–٦٠) من سورة الواقعة 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -418,7 +421,7 @@
             autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 560);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (الواقعة ٦٤–٧٠) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (الواقعة ٥١–٦٠) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -430,7 +433,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات الواقعة ٦٤–٧٠';
+    statusLabel.innerHTML = '🎙️ استمع لآيات الواقعة ٥١–٦٠';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
