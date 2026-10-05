@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة الواقعة | الآيات 71-80 - للأطفال</title>
+<title>سورة الواقعة | الآيات 81-96 (ختام السورة) - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,11 +227,11 @@
       <span class="title-arabic">سُورَةُ الْوَاقِعَةِ</span>
       <span class="title-secondary">(الواقعة)</span>
     </div>
-    <div class="verse-range">الآيات ٧١ – ٨٠</div>
+    <div class="verse-range">الآيات ٨١ – ٩٦ (ختام السورة)</div>
   </div>
 
   <div class="surah-note">
-    ﴿ أَفَرَأَيْتُمُ النَّارَ الَّتِي تُورُونَ ﴾
+    ﴿ فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,18 +249,24 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH AL-WAQI'AH (56) VERSES 71 – 80 ======================
+  // ====================== SURAH AL-WAQI'AH (56) VERSES 81 – 96 (END) ======================
   const versesData = [
-    { num: 71, arabic: "أَفَرَأَيْتُمُ النَّارَ الَّتِي تُورُونَ" },
-    { num: 72, arabic: "أَأَنْتُمْ أَنْشَأْتُمْ شَجَرَتَهَا أَمْ نَحْنُ الْمُنْشِئُونَ" },
-    { num: 73, arabic: "نَحْنُ جَعَلْنَاهَا تَذْكِرَةً وَمَتَاعًا لِلْمُقْوِينَ" },
-    { num: 74, arabic: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ" },
-    { num: 75, arabic: "فَلَا أُقْسِمُ بِمَوَاقِعِ النُّجُومِ" },
-    { num: 76, arabic: "وَإِنَّهُ لَقَسَمٌ لَوْ تَعْلَمُونَ عَظِيمٌ" },
-    { num: 77, arabic: "إِنَّهُ لَقُرْآنٌ كَرِيمٌ" },
-    { num: 78, arabic: "فِي كِتَابٍ مَكْنُونٍ" },
-    { num: 79, arabic: "لَا يَمَسُّهُ إِلَّا الْمُطَهَّرُونَ" },
-    { num: 80, arabic: "تَنْزِيلٌ مِنْ رَبِّ الْعَالَمِينَ" }
+    { num: 81, arabic: "أَفَبِهَٰذَا الْحَدِيثِ أَنْتُمْ مُدْهِنُونَ" },
+    { num: 82, arabic: "وَتَجْعَلُونَ رِزْقَكُمْ أَنَّكُمْ تُكَذِّبُونَ" },
+    { num: 83, arabic: "فَلَوْلَا إِذَا بَلَغَتِ الْحُلْقُومَ" },
+    { num: 84, arabic: "وَأَنْتُمْ حِينَئِذٍ تَنْظُرُونَ" },
+    { num: 85, arabic: "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْكُمْ وَلَٰكِنْ لَا تُبْصِرُونَ" },
+    { num: 86, arabic: "فَلَوْلَا إِنْ كُنْتُمْ غَيْرَ مَدِينِينَ" },
+    { num: 87, arabic: "تَرْجِعُونَهَا إِنْ كُنْتُمْ صَادِقِينَ" },
+    { num: 88, arabic: "فَأَمَّا إِنْ كَانَ مِنَ الْمُقَرَّبِينَ" },
+    { num: 89, arabic: "فَرَوْحٌ وَرَيْحَانٌ وَجَنَّتُ نَعِيمٍ" },
+    { num: 90, arabic: "وَأَمَّا إِنْ كَانَ مِنْ أَصْحَابِ الْيَمِينِ" },
+    { num: 91, arabic: "فَسَلَامٌ لَكَ مِنْ أَصْحَابِ الْيَمِينِ" },
+    { num: 92, arabic: "وَأَمَّا إِنْ كَانَ مِنَ الْمُكَذِّبِينَ الضَّالِّينَ" },
+    { num: 93, arabic: "فَنُزُلٌ مِنْ حَمِيمٍ" },
+    { num: 94, arabic: "وَتَصْلِيَةُ جَحِيمٍ" },
+    { num: 95, arabic: "إِنَّ هَٰذَا لَهُوَ حَقُّ الْيَقِينِ" },
+    { num: 96, arabic: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -361,7 +367,7 @@
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٧١–٨٠) من سورة الواقعة 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة خاتمة سورة الواقعة (٨١–٩٦) 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -421,7 +427,7 @@
             autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 560);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (الواقعة ٧١–٨٠) ✨';
+            statusLabel.innerHTML = '✨ أتممت خاتمة سورة الواقعة (٨١–٩٦) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -433,7 +439,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات الواقعة ٧١–٨٠';
+    statusLabel.innerHTML = '🎙️ استمع لخاتمة الواقعة ٨١–٩٦';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
