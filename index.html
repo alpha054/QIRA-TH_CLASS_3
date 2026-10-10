@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>سورة محمد | الآيات 4-6 - للأطفال</title>
+<title>سورة محمد | الآيات 12-14 - للأطفال</title>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   * {
@@ -227,11 +227,11 @@
       <span class="title-arabic">سُورَةُ مُحَمَّدٍ</span>
       <span class="title-secondary">(صلى الله عليه وسلم)</span>
     </div>
-    <div class="verse-range">الآيات ٤ – ٦</div>
+    <div class="verse-range">الآيات ١٢ – ١٤</div>
   </div>
 
   <div class="surah-note">
-    ﴿ فَإِذَا لَقِيتُمُ الَّذِينَ كَفَرُوا فَضَرْبَ الرِّقَابِ ﴾
+    ﴿ إِنَّ اللَّهَ يُدْخِلُ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ ﴾
   </div>
 
   <div class="audio-section">
@@ -249,11 +249,11 @@
 <audio id="quranAudio" preload="metadata"></audio>
 
 <script>
-  // ====================== SURAH MUHAMMAD (47) VERSES 4 – 6 ======================
+  // ====================== SURAH MUHAMMAD (47) VERSES 12 – 14 ======================
   const versesData = [
-    { num: 4, arabic: "فَإِذَا لَقِيتُمُ الَّذِينَ كَفَرُوا فَضَرْبَ الرِّقَابِ حَتَّىٰ إِذَا أَثْخَنْتُمُوهُمْ فَشُدُّوا الْوَثَاقَ فَإِمَّا مَنًّا بَعْدُ وَإِمَّا فِدَاءً حَتَّىٰ تَضَعَ الْحَرْبُ أَوْزَارَهَا ۚ ذَٰلِكَ وَلَوْ يَشَاءُ اللَّهُ لَانْتَصَرَ مِنْهُمْ وَلَٰكِنْ لِيَبْلُوَ بَعْضَكُمْ بِبَعْضٍ ۗ وَالَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ فَلَنْ يُضِلَّ أَعْمَالَهُمْ" },
-    { num: 5, arabic: "سَيَهْدِيهِمْ وَيُصْلِحُ بَالَهُمْ" },
-    { num: 6, arabic: "وَيُدْخِلُهُمُ الْجَنَّةَ عَرَّفَهَا لَهُمْ" }
+    { num: 12, arabic: "إِنَّ اللَّهَ يُدْخِلُ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ ۖ وَالَّذِينَ كَفَرُوا يَتَمَتَّعُونَ وَيَأْكُلُونَ كَمَا تَأْكُلُ الْأَنْعَامُ وَالنَّارُ مَثْوًى لَهُمْ" },
+    { num: 13, arabic: "وَكَأَيِّنْ مِنْ قَرْيَةٍ هِيَ أَشَدُّ قُوَّةً مِنْ قَرْيَتِكَ الَّتِي أَخْرَجَتْكَ أَهْلَكْنَاهُمْ فَلَا نَاصِرَ لَهُمْ" },
+    { num: 14, arabic: "أَفَمَنْ كَانَ عَلَىٰ بَيِّنَةٍ مِنْ رَبِّهِ كَمَنْ زُيِّنَ لَهُ سُوءُ عَمَلِهِ وَاتَّبَعُوا أَهْوَاءَهُمْ" }
   ];
 
   function getAyahUrl(verseNumber) {
@@ -354,7 +354,7 @@
             } else {
               isPlaying = false;
               playBtn.innerHTML = '▶︎';
-              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (٤–٦) من سورة محمد 🌟';
+              statusLabel.innerHTML = '✅ تمت تلاوة الآيات (١٢–١٤) من سورة محمد 🌟';
               progressFillBar.style.width = '100%';
               audioElem.onended = null;
               clearNextTimeout();
@@ -414,7 +414,7 @@
             autoNextTimeout = setTimeout(() => playVerse(currentIdx + 1, true), 600);
           } else {
             isPlaying = false; playBtn.innerHTML = '▶︎';
-            statusLabel.innerHTML = '✨ أتممت الآيات (محمد ٤–٦) ✨';
+            statusLabel.innerHTML = '✨ أتممت الآيات (محمد ١٢–١٤) ✨';
             progressFillBar.style.width = '100%';
           }
         };
@@ -426,7 +426,7 @@
     buildVerses();
     setActiveVerse(0, false);
     playBtn.innerHTML = '▶︎';
-    statusLabel.innerHTML = '🎙️ استمع لآيات محمد ٤–٦';
+    statusLabel.innerHTML = '🎙️ استمع لآيات محمد ١٢–١٤';
     progressFillBar.style.width = '0%';
     currentIdx = 0;
     playBtn.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
